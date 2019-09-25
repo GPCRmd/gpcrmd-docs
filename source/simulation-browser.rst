@@ -19,6 +19,8 @@ Use the panel in the left to search for molecules or proteins (the "elements" wh
 Right Panel, joining the elements:
 ----------------------------------
 
+
+
 The right panel holds all the elements you have added during your elements search. You can directly click the search button  to find all simulations matching that combination or you can tune a bit your results by filtering by some parameters (time step, software used, etc.). You can select the function which the molecule performs in the system: "Orthosteric ligand", "Allosteric Ligand", "Other" or "All". "All" meaning any of the previous. For proteins, you can select if it is a GPCR or not, using the **"is GPCR" checkbox**. If it is not selected, we assume that the protein is NOT a GPCR. If you need to use boolean operators like OR, AND, NOT, switch to the `Advanced search`_.
 
 Difference between standard form and specific state
@@ -75,4 +77,8 @@ You can search simulations without adding any elements. This will return every s
 
 
 
+<<<<<<< HEAD
 .. _Advanced search: https://submission.gpcrmd.org/dynadb/search/#adv
+=======
+.. _Advanced search: https://submission.gpcrmd.org/dynadb/search/#adv
+>>>>>>> 6be12beb565c57bca3273d6fc1af1053520b6c4f

@@ -10,8 +10,7 @@ Welcome to GPCRmd's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   source/viewer
-   source/toolkit
+   source/workbench
    source/cross-receptor-analysis
    source/submission
    source/simulation-browser

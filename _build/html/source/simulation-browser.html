@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simulation browser &#8212; gpcrmd  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Simulation submission" href="submission.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="simulation-browser">
+<h1><a class="toc-backref" href="#id1">Simulation browser</a><a class="headerlink" href="#simulation-browser" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#simulation-browser" id="id1">Simulation browser</a></p>
+<ul>
+<li><p><a class="reference internal" href="#usage" id="id2">Usage</a></p></li>
+<li><p><a class="reference internal" href="#difference-between-standard-form-and-specific-state" id="id3">Difference between standard form and specific state</a></p></li>
+<li><p><a class="reference internal" href="#simple-and-advanced-search" id="id4">Simple and Advanced Search</a></p></li>
+<li><p><a class="reference internal" href="#exact-match" id="id5">Exact Match</a></p></li>
+<li><p><a class="reference internal" href="#search-by-gpcrmd-id" id="id6">Search by GPCRmd ID:</a></p></li>
+<li><p><a class="reference internal" href="#empty-search" id="id7">Empty search</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="usage">
+<h2><a class="toc-backref" href="#id2">Usage</a><a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Imagine that you want to cook something and you are interested in a few ingredients, it would be nice to have some website where you could look for those ingredients, and then look for a recipe which uses those elements. This is exactly what we have done…for molecular dynamics. If you are interested in a simulation containing the ingredients serotonin and the serotonine receptor, you look for the molecule serotonin in the left panel (A), results will appear and then you click “Add to Search”. Now, you look for the serotonin receptor -again in the left panel-, and click “Add to Search”. Finally, go to the right panel (B) and click the search button. We will show you all the simulations containing those elements.</p>
+<div class="section" id="left-panel-searching-the-elements">
+<h3>Left Panel, searching the elements:<a class="headerlink" href="#left-panel-searching-the-elements" title="Permalink to this headline">¶</a></h3>
+<p>Use the panel in the left to search for molecules or proteins (the “elements” which constitute simulations). You can use SMILES, InChI, InChIKey, PubChem CIDs, ChEMBL id’s and common names to search for molecules. In order to find proteins, Uniprot accession codes and common names can be used. You can filter the type of the results returned (All, protein, standard form, specific states). Next to every result, you will find an “Add to search” button, which will add the element to the right panel, allowing you to search a simulation using a given combination of elements. For example: standard form Clozapine AND protein P28222.</p>
+</div>
+<div class="section" id="right-panel-joining-the-elements">
+<h3>Right Panel, joining the elements:<a class="headerlink" href="#right-panel-joining-the-elements" title="Permalink to this headline">¶</a></h3>
+<p>The right panel holds all the elements you have added during your elements search. You can directly click the search button  to find all simulations matching that combination or you can tune a bit your results by filtering by some parameters (time step, software used, etc.). You can select the function which the molecule performs in the system: “Orthosteric ligand”, “Allosteric Ligand”, “Other” or “All”. “All” meaning any of the previous. For proteins, you can select if it is a GPCR or not, using the <strong>“is GPCR” checkbox</strong>. If it is not selected, we assume that the protein is NOT a GPCR. If you need to use boolean operators like OR, AND, NOT, switch to the <a class="reference external" href="https://submission.gpcrmd.org/dynadb/search/#adv">Advanced search</a>.</p>
+</div>
+</div>
+<div class="section" id="difference-between-standard-form-and-specific-state">
+<h2><a class="toc-backref" href="#id3">Difference between standard form and specific state</a><a class="headerlink" href="#difference-between-standard-form-and-specific-state" title="Permalink to this headline">¶</a></h2>
+<p>The difference between standard form and specific states is that a standard form represents a <strong>set</strong> of related molecules which only differ in the protonation state, or tautomerization state, or some other subtle features. Each of this different states is a single specific state. As the concept of specific state is more precise, when searching with it, you will only find those simulations containing exactly that specific state. However, if you search by a standard form, you will find all the simulations which have any of the related molecules belonging to that standard form set. So, if you search systems using Clozapine (standard form) you will always get more results (or the same) than if you search by Clozapine (specific state X).</p>
+</div>
+<div class="section" id="simple-and-advanced-search">
+<h2><a class="toc-backref" href="#id4">Simple and Advanced Search</a><a class="headerlink" href="#simple-and-advanced-search" title="Permalink to this headline">¶</a></h2>
+<p>In the right panel, you can choose between <strong>Simple and Advanced search</strong>, the difference being that the second kind allows you to use “AND”, “OR” and “NOT” boolean operators, as well as brackets. Simple search only allows “AND” operator (which is enough in most cases). The following is an example of how to perform a search with brackets:</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 54%" />
+<col style="width: 46%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>P28222</p></td>
+<td><p>P28222</p></td>
+</tr>
+<tr class="row-even"><td><p>AND ( Serotonin</p></td>
+<td><p>AND Serotonin</p></td>
+</tr>
+<tr class="row-odd"><td><p>OR Clozapine</p></td>
+<td><p>OR Clozapine</p></td>
+</tr>
+<tr class="row-even"><td><p>OR POPC )</p></td>
+<td><p>OR POPC</p></td>
+</tr>
+</tbody>
+</table>
+<p>The example search in the left will return the systems matching any of the following:</p>
+<ul class="simple">
+<li><p>P28222 + Serotonin</p></li>
+<li><p>P28222 + Clozapine</p></li>
+<li><p>P28222 + POPC</p></li>
+<li><p>P28222 + Serotonin + Clozapine</p></li>
+<li><p>P28222 + Serotonin + POPC</p></li>
+<li><p>P28222 + Serotonin + Clozapine + POPC</p></li>
+<li><p>P28222 + POPC + Clozapine</p></li>
+</ul>
+<p>However, the example search in the right will return the systems matching any of the following:</p>
+<ul class="simple">
+<li><p>P28222 + Serotonin</p></li>
+<li><p>Every system with Clozapine</p></li>
+<li><p>Every system with POPC</p></li>
+</ul>
+<p>Please, keep in mind that the results may not be composed only by the elements you have included in the search. So, when we say that the system will match “P28222 + Serotonin”, it means that at least, it has those two components, but it also may have something else, like ions, water, etc. Read the <a class="reference internal" href="#exact-match">Exact match</a> section to know how to avoid this greedy behaviour.</p>
+</div>
+<div class="section" id="exact-match">
+<h2><a class="toc-backref" href="#id5">Exact Match</a><a class="headerlink" href="#exact-match" title="Permalink to this headline">¶</a></h2>
+<p>If you select “Exact Match”, the search will return only those simulations whose composition matches exactly the one you have build in the right panel. If there is any other element in the simulation that you have not included in the search, it will not appear as a result. So, if you look for P28222 AND Serotonin, and select exact match, only those systems composed by P28222 and serotonin and nothing else will be retrieved; a system with P28222, water and serotonin will not be a result.</p>
+</div>
+<div class="section" id="search-by-gpcrmd-id">
+<h2><a class="toc-backref" href="#id6">Search by GPCRmd ID:</a><a class="headerlink" href="#search-by-gpcrmd-id" title="Permalink to this headline">¶</a></h2>
+<p>You also have the option to search by the identifiers used in the GPCRmd database, just check the <strong>“Search by GPCRmd ID” checkbox</strong>. If you select this type of search, you can return standard forms, specific states, proteins and dynamics. Below you will find the definition of these three concepts. You may find this kind of search useful to check if the simulation you have submited is available.</p>
+</div>
+<div class="section" id="empty-search">
+<h2><a class="toc-backref" href="#id7">Empty search</a><a class="headerlink" href="#empty-search" title="Permalink to this headline">¶</a></h2>
+<p>You can search simulations without adding any elements. This will return every simulation we have in our database. You can still filter by any of the fields: Force Field, Software, etc.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">gpcrmd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="viewer.html">Viewer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="toolkit.html">Toolkit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cross-receptor-analysis.html">Cross-receptor Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="submission.html">Simulation submission</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Simulation browser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#difference-between-standard-form-and-specific-state">Difference between standard form and specific state</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simple-and-advanced-search">Simple and Advanced Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exact-match">Exact Match</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search-by-gpcrmd-id">Search by GPCRmd ID:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#empty-search">Empty search</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="submission.html" title="previous chapter">Simulation submission</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, GPCR drug discovery group.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/source/simulation-browser.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

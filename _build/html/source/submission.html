@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simulation submission &#8212; gpcrmd  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Simulation browser" href="simulation-browser.html" />
+    <link rel="prev" title="Cross-receptor Analysis" href="cross-receptor-analysis.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="simulation-submission">
+<h1><a class="toc-backref" href="#id1">Simulation submission</a><a class="headerlink" href="#simulation-submission" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="the-simulation-submission-process-consists-in-4-steps">
+<p class="topic-title first">The simulation submission process consists in 4 steps:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#simulation-submission" id="id1">Simulation submission</a></p>
+<ul>
+<li><p><a class="reference internal" href="#protein-information" id="id2">Protein information</a></p></li>
+<li><p><a class="reference internal" href="#small-molecule-information" id="id3">Small molecule information</a></p></li>
+<li><p><a class="reference internal" href="#complex-information" id="id4">Complex information</a></p></li>
+<li><p><a class="reference internal" href="#dynamics-information" id="id5">Dynamics information</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="protein-information">
+<h2><a class="toc-backref" href="#id2">Protein information</a><a class="headerlink" href="#protein-information" title="Permalink to this headline">¶</a></h2>
+<p>Please provide relevant data for GPCRs as well as other proteins (e.g. G protein, arrestin, nanobodies, peptide ligands etc.) that are included in the simulation.</p>
+<p><strong>(A)</strong> Protein information is automatically retrieved by its UniProtKB accession number (AC). In case no AC exist, fill in manually the requested information in <strong>(B)</strong>.</p>
+<p><strong>(B)</strong> Automatically retrieved protein details. In case the protein is not available in UniProtKB the user has to manually provide this information.</p>
+<p>By clicking the “<strong>+ Add protein</strong>” button information about another proteins in the system can be provided. Several proteins can be added in a single submission but at least one must be a GPCR whose sequence must have been deposited to the GPCRdb.</p>
+</div>
+<div class="section" id="small-molecule-information">
+<h2><a class="toc-backref" href="#id3">Small molecule information</a><a class="headerlink" href="#small-molecule-information" title="Permalink to this headline">¶</a></h2>
+<p>Please, provide a detailed chemical description of all non-protein molecules in your system. This extensive information will help to provide a platform of well-characterized molecules for screening purposes to medicinal chemists and chemoinformaticians.</p>
+<p><strong>(A)</strong> Upload for each small molecule (non-protein) a ‘.sdf’ or ‘.mol’ file. A 2D chemical structure will be automatically displayed.</p>
+<p><strong>(B)</strong> Indicate if the uploaded structure is a co-crystalised molecule or if it belongs to bulk.</p>
+<p><strong>(C)</strong> Revise chemoinformatics data retrieved from the upload structure.</p>
+<p><strong>(D)</strong> Obtain molecule information from PubChem and ChEMBL databases.</p>
+<p>Click the “<strong>+ Add molecule</strong>” button on the bottom of the pannel corresponding to the last uploaded molecule to add information about another molecule in your system.</p>
+<p>Molecule data submission can be made individually by clicking the “<strong>Submit molecule</strong>” button on the bottom of every molecule pannel or simultaneously by clicking the “<strong>Submit all molecules</strong>” button on the bottom of the form.</p>
+</div>
+<div class="section" id="complex-information">
+<h2><a class="toc-backref" href="#id4">Complex information</a><a class="headerlink" href="#complex-information" title="Permalink to this headline">¶</a></h2>
+<p><strong>(A)</strong> Fill in the form with general information about the crystalized part of the simulated system.</p>
+<p><strong>(B)</strong> Fill the “Curated protein data”. As the coordinates of a protein may have different sources (X-ray, homology modeling…), the table must be filled in a protein segment-wise fashion. A segment stands for a continuum fragment of the protein whose coordinates come from the same source. In cases where the coordinates of the whole protein come from the same source, only one row in the table is needed for that protein. Importantly, information about the segments of all the proteins submitted in the step 1 must be provided. Every segment must be labeled with the “<strong>Prot #</strong>” number of the protein to which it belongs (the “<strong>Submitted proteins summary</strong>” table shows the “<strong>Prot #</strong>” number for each submitted protein). In order to assign correctly the canonical GPCR numbering to your simulation system, please indicate the starting (“<strong>From res</strong>” field) and ending (“<strong>To res</strong>”) residue numbers for each protein segment. After clicking the “Autocomplete resid” button, the Uniprot numbering will be later automatically assigned. In addition, indicate the source for coordinates of each crystalized or modeled protein segment, e.g. ‘threading’ for a modeled loop. Note that the “<strong>PDB ID</strong>” field in the table must be filled when the segment source is “X-ray” or “NMR”.</p>
+<p><strong>(C)</strong> Indicate the “<strong>Resname</strong>” in the retrieved list of co-crystalized small molecules. Extra rows can be added to the table after clicking the “<strong>+ Add molecule</strong>” if molecules with more than one “Resname” exist in the set of crystalized molecules. Then, click the “<strong>Validate</strong>” button and the “<strong>Num of mol</strong>” will be automatically filled.</p>
+</div>
+<div class="section" id="dynamics-information">
+<h2><a class="toc-backref" href="#id5">Dynamics information</a><a class="headerlink" href="#dynamics-information" title="Permalink to this headline">¶</a></h2>
+<p>Please, fill in the following form concerning specific details on the MD simulation protocol.</p>
+<p><strong>(A)</strong> Upload simulation files including coordinate file, topology file, trajectory files, simulation parameters, other files. In case of replicated, you can upload all files simultaneously (e.g. 20 to 100 replicates). After the file upload, please click the validate button in to order to ensure correct upload.</p>
+<p><strong>(B)</strong> Please complete the table of all simulation components by adding non-crystallized bulk molecules (e.g. waters, ions and lipids). For this, you only need to assign the corresponding residue name (resname) to the bulk molecules which are part of your simulation system. Then, click the “<strong>Validate</strong>” button to automatically fill the number of molecules (Num of mol) based on your uploaded simulation files</p>
+<p><strong>(C)</strong> Specify the simulation setup including information of Method, software, etc.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">gpcrmd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="workbench.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cross-receptor-analysis.html">Cross-receptor Analysis</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Simulation submission</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#protein-information">Protein information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#small-molecule-information">Small molecule information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#complex-information">Complex information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dynamics-information">Dynamics information</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="simulation-browser.html">Simulation browser</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="cross-receptor-analysis.html" title="previous chapter">Cross-receptor Analysis</a></li>
+      <li>Next: <a href="simulation-browser.html" title="next chapter">Simulation browser</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, GPCR drug discovery group.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/source/submission.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

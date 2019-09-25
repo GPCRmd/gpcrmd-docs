@@ -53,3 +53,7 @@ dkms.conf
 
 # Build files
 /_build/
+Makefile
+make.bat
+.vscode
+_templates

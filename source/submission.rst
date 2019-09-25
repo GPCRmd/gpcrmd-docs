@@ -1,3 +1,4 @@
+=====================
 Simulation submission
 =====================
 
@@ -8,7 +9,8 @@ The simulation submission process consists in 4 steps:
 * Step 4: Dynamics information
 
 Protein information
--------------------
+===================
+
 Please provide relevant data for GPCRs as well as other proteins (e.g. G protein, arrestin, nanobodies, peptide ligands etc.) that are included in the simulation.
 
 **(A)** Protein information is automatically retrieved by its UniProtKB accession number (AC). In case no AC exist, fill in manually the requested information in **(B)**.
@@ -18,7 +20,7 @@ Please provide relevant data for GPCRs as well as other proteins (e.g. G protein
 By clicking the "**+ Add protein**" button information about another proteins in the system can be provided. Several proteins can be added in a single submission but at least one must be a GPCR whose sequence must have been deposited to the GPCRdb.
 
 Small molecule information
---------------------------
+==========================
 
 Please, provide a detailed chemical description of all non-protein molecules in your system. This extensive information will help to provide a platform of well-characterized molecules for screening purposes to medicinal chemists and chemoinformaticians.
 
@@ -36,7 +38,7 @@ Molecule data submission can be made individually by clicking the "**Submit mole
 
 
 Complex information
--------------------
+===================
 
 **(A)** Fill in the form with general information about the crystalized part of the simulated system.
 
@@ -45,7 +47,7 @@ Complex information
 **(C)** Indicate the "**Resname**" in the retrieved list of co-crystalized small molecules. Extra rows can be added to the table after clicking the "**+ Add molecule**" if molecules with more than one "Resname" exist in the set of crystalized molecules. Then, click the "**Validate**" button and the "**Num of mol**" will be automatically filled.
 
 Dynamics information
---------------------
+====================
 
 Please, fill in the following form concerning specific details on the MD simulation protocol.
 

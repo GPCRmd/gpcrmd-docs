@@ -1,8 +1,9 @@
+=======================
 Cross-receptor Analysis
 =======================
 
 About the heatmap:
-------------------
+==================
 
 This plot compares residue interaction frequency among several GPCR dynamic simulations.
 
@@ -28,7 +29,7 @@ How to use this heatmap:
 More information from a selected interaction can be displayed by clicking uppon its cell.
 
 About the Top5 flareplots:
---------------------------
+==========================
 
 On these two plots are represented the 5 most frequent interactions (on average) in each of the clusters.
 
@@ -43,7 +44,7 @@ How to use these flareplots:
 3. Press "show in structure" to disable or reenable the visualization of selected positions.
 
 About the cluster simulation viewers:
--------------------------------------
+=====================================
 
 On these viewers can be visulaized each of the simulations present on the cluster selected in flareplot.
 

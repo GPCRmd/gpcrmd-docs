@@ -1,6 +1,6 @@
-=============
-GPCRmd Viewer
-=============
+======
+Viewer
+======
 
 
 General features

@@ -2,6 +2,9 @@
 Workbench
 =========
 
+.. contents::
+    :depth: 2
+
 ------
 Viewer
 ------

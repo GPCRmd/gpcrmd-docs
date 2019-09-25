@@ -2,12 +2,8 @@
 Simulation submission
 =====================
 
-The simulation submission process consists in 4 steps:
-
-* Step 1: Protein information
-* Step 2: Small molecule information
-* Step 3: Complex information
-* Step 4: Dynamics information
+.. contents:: The simulation submission process consists in 4 steps:
+    :depth: 2
 
 Protein information
 ===================

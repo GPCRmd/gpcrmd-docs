@@ -2,6 +2,9 @@
 Cross-receptor Analysis
 =======================
 
+.. contents::
+    :depth: 2
+
 About the heatmap:
 ==================
 

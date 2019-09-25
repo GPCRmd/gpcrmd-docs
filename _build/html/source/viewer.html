@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>GPCRmd Viewer &#8212; gpcrmd  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Welcome to gpcrmd’s documentation!" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="gpcrmd-viewer">
+<h1>GPCRmd Viewer<a class="headerlink" href="#gpcrmd-viewer" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="general-features">
+<h2>General features<a class="headerlink" href="#general-features" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mouse-controls">
+<h3>Mouse controls:<a class="headerlink" href="#mouse-controls" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p><strong>Left button hold and move</strong>: rotate camera around center.</p></li>
+<li><p><strong>Middle button hold and move</strong>: zoom camera in and out.</p></li>
+<li><p><strong>Middle button click</strong>: center camera on atom.</p></li>
+<li><p><strong>Right button hold and move</strong>: translate camera in screen plane.</p></li>
+<li><dl>
+<dt><strong>Left button click</strong>: pick atom or distance.</dt><dd><ul>
+<li><p><em>On click show distance</em> mode:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>When an atom is clicked, a label with information about it appears. Click at the background to deselect it, the label will disappear. To maintain a label, double-click on an atom. Double-click on a label to remove it.</p></li>
+<li><p>To draw a distance line between two atoms just single-click one atom after the other. Distances can be removed by double-clicking on one of the atoms at the edges.</p></li>
+<li><p>It is also possible to remove all the atom labels and distances at once, with the <strong>Clear dists. button</strong>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><dl class="simple">
+<dt><em>On click show variants</em> mode:</dt><dd><p>Click on the blue dots to obtain information on known natural variants of a residue. Data obtained from the <a class="reference external" href="http://exac.broadinstitute.org/">ExAC database</a>.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><em>On click show mutations</em> mode:</dt><dd><p>Click on the blue dots to obtain information on mutational experiments done on a residue. Data obtained from <a class="reference external" href="https://www.gpcrdb.org/">GPCRdb</a>.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>If you wish to use more complex visualization options, you can open the structure and trajectories in <a class="reference external" href="http://arose.github.io/mdsrv/">MDsrv</a> just by clicking at the gear button.</p>
+</div>
+</div>
+<div class="section" id="selection-tools">
+<h2>Selection tools<a class="headerlink" href="#selection-tools" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="quick-selection">
+<h3>Quick selection<a class="headerlink" href="#quick-selection" title="Permalink to this headline">¶</a></h3>
+<p>Quick-selection buttons allow to rapidly display the molecules present at the dynamics. Hover the buttons with your mouse to see the abbreviated name of these molecules, which can be used to create your own selections.</p>
+<p>In the case of Structure selections, It is also possible to select the residues or molecules that are found <strong>within a certain distance of a ligand</strong>. It is only necessary to:</p>
+<ol class="arabic simple">
+<li><p>Indicate what you want to visualize (residues or molecules found at the simulation).</p></li>
+<li><p>Input the wanted threshold distance (in angstroms).</p></li>
+<li><p>Indicate the molecule type around which the selection is made. Apart from predefined molecules, it is also possible to show the residues/molecules that are close to a personalized selection which, again, can include generic GPCR residue numbering.</p></li>
+</ol>
+<p>If the selection is correct, a green checkmark will appear at the left. More than one distance selection can be displayed at the same time. Selections made with this tool will appear in coral red. The distance selection will be updated for each trajectory frame, as the disposition of the atoms may change.</p>
+</div>
+<div class="section" id="custom-selection">
+<h3>Custom selection<a class="headerlink" href="#custom-selection" title="Permalink to this headline">¶</a></h3>
+<p>Use the text input field to specify your personalized representations. You can choose a representation type (licorice, cartoon, etc.) and a coloring scheme (color by element, by chain, etc.).</p>
+<p>Selections must be expressed using the <a class="reference external" href="http://proteinformatics.charite.de/ngl/doc/index.html#User_manual/Usage/Selection_language">NGL selection language</a>. Moreover, to indicate protein residues it is also possible to use <strong>generic GPCR residue numbering</strong>: Ballesteros-Weinstein (ex. 1.50), GPCRdb structure-based numbering (ex. 1x50) or a combination of both (ex. 1.50x50).</p>
+<p>For example, if you input <code class="docutils literal notranslate"><span class="pre">40-70:P</span> <span class="pre">or</span> <span class="pre">CLZ</span></code>, residues numbered from 40 to 70 at the PDB belonging to chain P and Clozapine will be displayed. Another example, this time using a combination of different generic GPCR numbering styles, could be <code class="docutils literal notranslate"><span class="pre">1.50</span> <span class="pre">-</span> <span class="pre">2x48</span> <span class="pre">or</span> <span class="pre">3.35x35</span> <span class="pre">or</span> <span class="pre">SOD</span></code>.</p>
+</div>
+<div class="section" id="sequence-selection">
+<h3>Sequence selection<a class="headerlink" href="#sequence-selection" title="Permalink to this headline">¶</a></h3>
+<p>The GPCR Workbench also provides the option to select a protein segment from its sequence. Set your selection by clicking at the desired range or ranges of residues, selected segments will appear at the sequence in green. To deselect a residue range from the sequence, just click on it. Finally, click at <strong>Confirm selection</strong>: the residue range(s) will be added to a text input field, which you can modify to adjust the selection to what you want to display. If you want to add new sequence selections, click at the plus button.</p>
+</div>
+<div class="section" id="gpcr-conserved-positions">
+<h3>GPCR conserved positions<a class="headerlink" href="#gpcr-conserved-positions" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>GPCR conserved positions</strong> selection provides the possibility to rapidly select positions or domains conserved in the different GPCR family classes. The GPCR class of the protein being represented will be selected by default, and therefore the conserved positions/domains corresponding to that GPCR class will be available to visualize.</p>
+<p>It is also possible to visualize the positions that correspond to conserved positions from other GPCR classes. For example, if your protein belongs to class A, you can represent the residue that corresponds to class B <em>2.50 (2.50b)</em>. Hover the buttons with your mouse for more information about the conserved positions and motifs, if available.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">gpcrmd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">GPCRmd Viewer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-features">General features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#selection-tools">Selection tools</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../index.html" title="previous chapter">Welcome to gpcrmd’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, GPCR drug discovery group.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/source/viewer.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

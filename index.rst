@@ -9,7 +9,7 @@ Welcome to GPCRmd's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
+   
    source/workbench
    source/cross-receptor-analysis
    source/submission

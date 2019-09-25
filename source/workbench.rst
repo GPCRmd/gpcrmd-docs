@@ -83,11 +83,6 @@ It is also possible to visualize the positions that correspond to conserved posi
 .. _NGL selection language: http://proteinformatics.charite.de/ngl/doc/index.html#User_manual/Usage/Selection_language
 
 
-
-.. |more| image:: /_static/more.png
-          :align: middle
-          :alt: more info
-
 -------
 Toolkit
 -------

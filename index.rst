@@ -12,8 +12,8 @@ Welcome to gpcrmd's documentation!
 
    source/viewer
    source/toolkit
-   submission
-   cross-receptor Analysis
+   source/submission
+   source/cross-receptor-analysis
 
 * workbench
     * viewer

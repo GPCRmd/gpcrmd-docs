@@ -1,6 +1,6 @@
-=======================
-Cross-receptor Analysis
-=======================
+=============================
+Comparative receptor analysis
+=============================
 
 .. contents::
     :depth: 2

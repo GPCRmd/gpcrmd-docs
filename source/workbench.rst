@@ -90,15 +90,65 @@ Toolkit
 Interaction network (Flare plots)
 =================================
 
-If a flare plot is available for the simulation being displayed at the viewer, the option to obtain it will be available at the GPCRmd Toolkit section. Flare Plots are a tool for the study and representation of intra-protein interactions developed at the Stanford University by Dr. Fonseca and Dr Venkatakishnan. This approach makes it possible to obtain a highly visual depiction of complex data, such as the set of interactions formed between protein residues throughout MD simulations, in the form of circular interactive networks named Flare plots. Applied to the study of GPCRs, Flare plots are capable to generate networks which group protein residues according to the helix in which they belong and differentiate interactions between residues of the same helix from inter-helix interactions. Residue-residue interactions are represented as lines connecting residue pairs. Hover or click a residue to highligh the lines representing the interactions in which it participates.
+Flare Plots are a tool for the study and representation of intra-protein interactions developed at the Stanford University by Dr. Fonseca and Dr Venkatakishnan. This approach makes it possible to obtain a highly visual depiction of complex data, such as the set of interactions formed between protein residues throughout MD simulations, in the form of circular interactive networks named Flare plots. Residue-residue interactions are represented as lines connecting residue pairs. Hover or click a residue to highligh the lines representing the interactions in which it participates.
 
 There are several options available
 
-* **Interacion type**: Select the type of interaciton to display on the plot.
+* **Interacion type:** Select the type of interaciton to display on the plot.
+    * **Hbonds**:
+        * | **Wernet Nilsson criteria (MDTraj):** Any combination of donor atoms (NH or OH) and acceptor atoms (N or O) that holds the condition:
+          | \|AD| < 3.3 Å − 0.00044 * ∠HDA * ∠HDA
+          | Where \|AD| is the distance in Angstroms between donor and acceptor heavy atoms, and ∠HDA is the angle formed by the hydrogen atom, donor, and acceptor atoms in degrees. Defined by the MDTraj module function wernet_wilson_.
+        * | **GetContacts criteria:**
+          | \|AD| < 3.5Å
+          | ∠AHD < 70°
+          | Where A (acceptor) and D (donor) are any atom except hydrogen, carbon or sulphur.
+          | Based on GetContacts_. 
+    * | **Salt bridges:**
+      | \|AC\| < 4.0Å
+      | Where:
+      | A (anion): ASP/OD1+OD2, GLU/OE1+OE2
+      | C (cation): LYS/NZ, ARG/NH1+NH2, HIS/ND1+NE2
+      | Based on GetContacts_. 
+    * | **Pi-cation:**
+      | \|AC| < 6.0Å
+      | ∠CAn < 60°
+      | Where:
+      | A (aromatic): center(PHE/CG+CE1+CE2), center(TRP/CD2+CZ2+CZ3), center(TYR/CG+CE1+CE2), center(HIS/CG+CD2+CE1)
+      | C (cation): LYS/NZ, ARG/NH1+NH2, HIS/ND1+NE2
+      | Based on GetContacts_.
+    * | **Pi-stacking:**
+      | \|A1A2| < 7.0Å
+      | ∠(n1, n2) < 30°
+      | ∠(n1, A1A2) < 45°
+      | ∠(n2, A1A2) < 45°
+      | Where:
+      | A1, A2 (aromatic rings): center(PHE/CG+CE1+CE2), center(TRP/CD2+CZ2+CZ3), center(TYR/CG+CE1+CE2), center(HIS/CG+CD2+CE1)
+      | Based on GetContacts_.
+    * | **T-stacking:**
+      | \|A1A2| < 5.0Å
+      | 60° < ∠(n1, n2) < 90°
+      | ∠(n1, A1A2) < 45°
+      | ∠(n2, A1A2) < 45°
+      | Where:
+      | A1, A2 (aromatic rings): center(PHE/CG+CE1+CE2), center(TRP/CD2+CZ2+CZ3), center(TYR/CG+CE1+CE2), center(HIS/CG+CD2+CE1)
+      | Based on GetContacts_.
+    * | **Van der Waals:**
+      | \|AB| < Rvdw(A) + Rvdw(B) + 0.5
+      | Where A and B are any non-hydrogen atoms.
+      | Based on GetContacts_.
+    * **Water bridges:** Two different residues forming an Hydrogen bond with the same water molecule. Based on GetContacts_.
+    * **Extended water bridges:** Two different residues forming an Hydrogen bond with two different water moleucules which also form an hydrogen bond between them. Based on GetContacts_.
+    * | **Hydrophobic:**
+      | \|AB| < Rvdw(A) + Rvdw(B) + 0.5
+      | Where:
+      | A, B: ALA+CYS+PHE+GLY+ILE+LEU+MET+PRO+VAL+TRP and element C or S
+      | Based on GetContacts_. 
+
 * **Display**:
     * **Interacting pairs**:Show only a subset of interactions (intra- or inter-helix) or all of them.
     * **Simulation**: It is possible to summarize the interactions formed through all the trajectory frames. The frequency of each interaction is represented by the thickness of the lines connecting residues.
-* **Show in structure**: Click to display structural representations of the residues selected (clicked) at the flare plot plot. Unclick to hyde them. If there are no residues selected at the flare plot, nothing will happen.
+* **Show in structure**: Click to display structural representations of the residues selected (clicked) at the flare plot. Unclick to hyde them. If there are no residues selected at the flare plot, nothing will happen.
 * **Clear plot**: Click to delete all selections made on the plot.
 * **Download data**: Click to download the plot data.
 
@@ -144,3 +194,4 @@ This tool computes the RMSD of all the conformations in a target trajectory to a
 
 
 .. _wernet_nilson: http://mdtraj.org/1.8.0/api/generated/mdtraj.wernet_nilsson.html
+.. _GetContacts: https://getcontacts.github.io/interactions.html

@@ -1,5 +1,5 @@
 =============================
-Comparative receptor analysis
+Receptor meta-analysis
 =============================
 
 .. contents::

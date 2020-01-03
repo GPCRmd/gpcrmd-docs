@@ -31,7 +31,7 @@ Mouse controls:
         * It is also possible to remove all the atom labels and distances at once, with the **Clear dists. button**.
 
     * *On click show variants* mode:
-        Click on the blue dots to obtain information on known natural variants of a residue. Data obtained from the `ExAC database`_.
+        Click on the blue dots to obtain information on known natural variants of a residue. Data obtained from the `gnomAD database`_.
 
     * *On click show mutations* mode:
         Click on the blue dots to obtain information on mutational experiments done on a residue. Data obtained from GPCRdb_.
@@ -78,7 +78,7 @@ The **GPCR conserved positions** selection provides the possibility to rapidly s
 It is also possible to visualize the positions that correspond to conserved positions from other GPCR classes. For example, if your protein belongs to class A, you can represent the residue that corresponds to class B *2.50 (2.50b)*. Hover the buttons with your mouse for more information about the conserved positions and motifs, if available.
 
 .. _MDsrv: http://arose.github.io/mdsrv/
-.. _ExAC database: http://exac.broadinstitute.org/
+.. _gnomAD database: https://gnomad.broadinstitute.org/
 .. _GPCRdb: https://www.gpcrdb.org/
 .. _NGL selection language: http://proteinformatics.charite.de/ngl/doc/index.html#User_manual/Usage/Selection_language
 

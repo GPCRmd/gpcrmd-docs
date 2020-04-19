@@ -5,10 +5,13 @@ Workbench
 .. contents::
     :depth: 2
 
+
+The GPCRmd Workbench includes a set of online tools for the interactive visualization (*Viewer*) and analysis (*Toolkit*) of individual simulations.
+
+
 ------
 Viewer
 ------
-
 
 General features
 ================
@@ -24,7 +27,7 @@ Mouse controls:
 * **Left button click**: pick atom or distance.
     * *On click show distance* mode:
 
-        * When an atom is clicked, a label with information about it appears. Click at the background to deselect it, the label will disappear. To maintain a label, double-click on an atom. Double-click on a label to remove it.
+        * When an atom is clicked, a label with information about it is appears. Click at the background to deselect it, the label will disappear. To maintain a label, double-click on an atom. Double-click again on the atom to remove the label.
 
         * To draw a distance line between two atoms just single-click one atom after the other. Distances can be removed by double-clicking on one of the atoms at the edges.
 
@@ -65,15 +68,17 @@ Selections must be expressed using the `NGL selection language`_. Moreover, to i
 
 For example, if you input ``40-70:P or CLZ``, residues numbered from 40 to 70 at the PDB belonging to chain P and Clozapine will be displayed. Another example, this time using a combination of different generic GPCR numbering styles, could be ``1.50 - 2x48 or 3.35x35 or SOD``.
 
+If your selection includes water and/or membrane molecules that you wish to display, check 'Include membrane and water'. This may slow down the playback speed of the simulation.
+
 Sequence selection
 ------------------
 
-The GPCR Workbench also provides the option to select a protein segment from its sequence. Set your selection by clicking at the desired range or ranges of residues, selected segments will appear at the sequence in green. To deselect a residue range from the sequence, just click on it. Finally, click at **Confirm selection**: the residue range(s) will be added to a text input field, which you can modify to adjust the selection to what you want to display. If you want to add new sequence selections, click at the plus button.
+The GPCR Workbench also provides the option to select a protein segment from its sequence. Set your selection by clicking at the desired range or ranges of residues. Selected segments will appear at the sequence in green. To deselect a residue range from the sequence, just click on it. Finally, click at **Confirm selection**: the residue range(s) will be added to a text input field, which you can further modify to adjust the selection. If you want to add new sequence selections, click at the plus button.
 
 GPCR conserved positions
 ------------------------
 
-The **GPCR conserved positions** selection provides the possibility to rapidly select positions or domains conserved in the different GPCR family classes. The GPCR class of the protein being represented will be selected by default, and therefore the conserved positions/domains corresponding to that GPCR class will be available to visualize.
+This seciton provides the possibility to rapidly select positions or domains conserved in the different GPCR family classes. The GPCR class of the protein being represented will be selected by default, and therefore the conserved positions/domains corresponding to that GPCR class will be available to visualize.
 
 It is also possible to visualize the positions that correspond to conserved positions from other GPCR classes. For example, if your protein belongs to class A, you can represent the residue that corresponds to class B *2.50 (2.50b)*. Hover the buttons with your mouse for more information about the conserved positions and motifs, if available.
 
@@ -82,6 +87,10 @@ It is also possible to visualize the positions that correspond to conserved posi
 .. _GPCRdb: https://www.gpcrdb.org/
 .. _NGL selection language: http://proteinformatics.charite.de/ngl/doc/index.html#User_manual/Usage/Selection_language
 
+
+Experimental density maps
+---------------------------
+Display X-ray or electron microscopy density maps by defining any selection within this section. By default, this will also modify the representation of the molecules of the system. To change this behavior, un-select the option "Apply default representations" within *Selection settings*.
 
 -------
 Toolkit
@@ -98,7 +107,7 @@ There are several options available
     * **Hydrogen bonds**:
         * | **Wernet Nilsson criteria (MDTraj):** Any combination of donor atoms (NH or OH) and acceptor atoms (N or O) that holds the condition:
           | \|AD| < 3.3 Å − 0.00044 * ∠HDA * ∠HDA
-          | Where \|AD| is the distance in Angstroms between donor and acceptor heavy atoms, and ∠HDA is the angle formed by the hydrogen atom, donor, and acceptor atoms in degrees. Defined by the MDTraj module function wernet_wilson_.
+          | Where \|AD| is the distance in Angstroms between donor and acceptor heavy atoms, and ∠HDA is the angle formed by the hydrogen atom, donor, and acceptor atoms in degrees. Defined by the MDTraj module function wernet_nilson_.
         * | **GetContacts criteria:**
           | \|AD| < 3.5Å
           | ∠AHD < 70°
@@ -199,7 +208,17 @@ Water volume distribution
 ==========================
 Displays an averaged water density map of the MD trajectory under study. Maps are precomputed `VMD VolMap Tool`_. They are generated only for oxygen atoms of a water molecule in a cutoff distance of 10 Å to the protein using a resolution of 1 Å. Atoms are treated as spheres using the atomic radii. 
 
+Tunnels and channels
+=====================
+Displays the tunnels and channels formed in the receptor during the simulation. Tunnels are defined as void pathways leading from a cavity buried in a protein core to the surrounding solvent, while in channels both endings are opened to the surrounding solvent.
+
+Tunnels/channels are precalculated using the software Caver_. The starting point coordinates are set to the centre of the binding pocket, and the following input parameters are used: probe_radius=1.4, shell_radius=3, shell_depth=4.
+
+All the tunnels/channels identified in the simulation are clustered by similarity. Such clusters of identified tunnels can be displayed by selecting them in the "Clusters" column. It is also possible to display the tunnel with the highest throughput of each cluster ("Representative" column). `As defined by Caver`_, the throughput of a tunnel or channel corresponds to the importance of the pathway, which is the probability that the pathway is actually used as a route for transportation.
+
 
 .. _wernet_nilson: http://mdtraj.org/1.8.0/api/generated/mdtraj.wernet_nilsson.html
 .. _GetContacts: https://getcontacts.github.io/interactions.html
 .. _VMD VolMap Tool: https://www.ks.uiuc.edu/Research/vmd/vmd-1.9.1/ug/node153.html
+.. _Caver: https://caver.cz/index.php
+.. _As defined by Caver: doi.org/10.1371/journal.pcbi.1002708

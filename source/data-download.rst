@@ -8,7 +8,7 @@ Data download
 
 All files related to the simulations stored in GPCRmd are available for download at the *Simulation report* page. This includes simulation outputs (trajectories, topologies, and coordinates) as well as simulation protocol and starting files. 
 
-The *Simulation report* page simulated system can be accessed from the *List of simulated systems* tab of the `Search page`_.
+The *Simulation report* can be accessed from the *List of simulated systems* tab of our `Search page`_ or directly from the *GPCRmd Workbench* page of the simulation, through the *Simulation report and files* link. 
 
 
 

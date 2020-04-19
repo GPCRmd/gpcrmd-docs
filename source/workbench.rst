@@ -214,7 +214,9 @@ Displays the tunnels and channels formed in the receptor during the simulation. 
 
 Tunnels/channels are precalculated using the software Caver_. The starting point coordinates are set to the centre of the binding pocket, and the following input parameters are used: probe_radius=1.4, shell_radius=3, shell_depth=4.
 
-All the tunnels/channels identified in the simulation are clustered by similarity. Such clusters of identified tunnels can be displayed by selecting them in the "Clusters" column. It is also possible to display the tunnel with the highest throughput of each cluster ("Representative" column). `As defined by Caver`_, the throughput of a tunnel or channel corresponds to the importance of the pathway, which is the probability that the pathway is actually used as a route for transportation.
+All the tunnels/channels identified in the simulation are clustered by similarity. Such clusters of identified tunnels can be displayed by selecting them in the "Clusters" column. 
+
+It is also possible to display the tunnel with the highest throughput of each cluster ("Representative" column). `As defined by Caver`_, the throughput of a tunnel or channel corresponds to the importance of the pathway, which is the probability that the pathway is actually used as a route for transportation. The frame at which the highest-throughput tunnel of each cluster is found can be displayed by clicking at the "Display frame *x*" button.
 
 
 .. _wernet_nilson: http://mdtraj.org/1.8.0/api/generated/mdtraj.wernet_nilsson.html

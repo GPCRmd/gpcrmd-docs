@@ -29,8 +29,6 @@ How to use this heatmap:
 
 More information from a selected interaction can be displayed by clicking upon its cell.
 
-
-
 About the Top representative interactions in clusters:
 ======================================================
 

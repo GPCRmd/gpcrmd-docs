@@ -7,7 +7,7 @@ Search
 
 List of simulated systems
 ==========================
-This table provides an easy and quick tool to search for any simulation in GPCRmd. Use the Search input to filter out the simulations shown at the table. It is possible to search by any of the terms included in the table (receptor name, Uniprot entry name, Uniprot ID, etc.). 
+This table provides an easy and quick tool to search for any simulation in GPCRmd. Use the `Search` input to filter out the simulations shown at the table. It is possible to search by any of the terms included in the table (receptor name, Uniprot entry name, Uniprot ID, etc.). 
 
 The table rows contain a summary of the most important features of the simulations. This includes links to further details of the receptor and molecules present in the simulated system. Click on "Go to the Workbench" to visualize and analyze the simulation. By clicking on "Go to the Report", you will access the details of the system setup and simulation protocol, as well as links to download the simulation data.
 

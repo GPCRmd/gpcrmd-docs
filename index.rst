@@ -14,4 +14,5 @@ Welcome to GPCRmd's documentation!
    source/cross-receptor-analysis
    source/submission
    source/simulation-browser
+   source/data-download
 

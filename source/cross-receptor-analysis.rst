@@ -63,7 +63,7 @@ Please take into account that a large simulation selection may require a long ti
 
 
 .. _GetContacts: https://github.com/getcontacts/getcontacts
-.. _GetContacts interaction criteria: http://./contmaps/interaction_types
+.. _GetContacts interaction criteria: https://submission.gpcrmd.org/contmaps/contmaps/interaction_types
 .. _plotly: https://github.com/plotly/plotly.py
 .. _Generic GPCR residue numbers: http://docs.gpcrdb.org/generic_numbering.html
 .. _FlarePlots: https://github.com/GPCRviz/flareplot

@@ -15,14 +15,14 @@ The table rows contain a summary of the most important features of the simulatio
 Browser
 =======
 
-For more complex searches, we provide our Browser, which includes more advanced browsing tools. Moreover, it has the advantage of allowing to search by synonims. 
+For more complex searches, we provide our Browser, which includes more advanced browsing tools. Moreover, it has the advantage of allowing to search by synonyms. 
 
 Overall, the Browser is used to find simulations based on the elements included in it. First, use panel **1** to search the desired elements (GPCRs, other proteins, molecules, etc). Add the elements to the search by clicking "Add to Search". Then, use the panel **2** to search for simulations containing the elements added.
 
 Usage
 ------------
 
-Let's say you are looking for a simulation containing serotonin and the serotonin receptor. You should use the panel **1** to search for these elements (e.g. search by the word "serotonin"). You will obtain a list of elements related to your search (serotonin, serotonin receptors, ...). Select the elements you are interested in by clicking "Add to Search". They will appear in panel **2**. If you don not want to apply any more filters or use the advanced search, you can just click at the search button of panel **2**. A list of simulations corresponding to your search will appear.
+Let's say you are looking for a simulation containing serotonin and the serotonin receptor. You should use the panel **1** to search for these elements (e.g. search by the word "serotonin"). You will obtain a list of elements related to your search (serotonin, serotonin receptors, ...). Select the elements you are interested in by clicking "Add to Search". They will appear in panel **2**. If you do not want to apply any more filters or use the advanced search, you can just click at the search button of panel **2**. A list of simulations corresponding to your search will appear.
 
 
 Panel **1**, searching the elements: 
@@ -67,7 +67,7 @@ However, the example search in the right will return the systems matching any of
 * Every system with Clozapine
 * Every system with POPC
 
-Please, keep in mind that the results may not be composed only by the elements you have included in the search. So, when we say that the system will match "P28222 + Serotonin", it means that at least, it has these two components - it may also have something else, like ions, water, etc. Read the `Exact match`_ section to know how to avoid this greedy behaviour.
+Please, keep in mind that the results may not be composed only by the elements you have included in the search. So, when we say that the system will match "P28222 + Serotonin", it means that at least, it has these two components - it may also have something else, like ions, water, etc. Read the `Exact match`_ section to know how to avoid this greedy behavior.
 
 
 Exact Match

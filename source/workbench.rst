@@ -212,7 +212,7 @@ Tunnels and channels
 =====================
 Displays the tunnels and channels formed in the receptor during the simulation. Tunnels are defined as void pathways leading from a cavity buried in a protein core to the surrounding solvent, while in channels both endings are opened to the surrounding solvent.
 
-Tunnels/channels are precalculated using the software Caver_. The starting point coordinates are set to the centre of the binding pocket, and the following input parameters are used: probe_radius=1.4, shell_radius=3, shell_depth=4.
+Tunnels/channels are precalculated using the software `Caver 3.0`_. The starting point coordinates are set to the centre of the binding pocket, and the following input parameters are used: probe_radius=1.4, shell_radius=3, shell_depth=4.
 
 All the tunnels/channels identified in the simulation are clustered by similarity. Such clusters of identified tunnels can be displayed by selecting them in the "Clusters" column. 
 
@@ -222,5 +222,5 @@ It is also possible to display the tunnel with the highest throughput of each cl
 .. _wernet_nilson: http://mdtraj.org/1.8.0/api/generated/mdtraj.wernet_nilsson.html
 .. _GetContacts: https://getcontacts.github.io/interactions.html
 .. _VMD VolMap Tool: https://www.ks.uiuc.edu/Research/vmd/vmd-1.9.1/ug/node153.html
-.. _Caver: https://caver.cz/index.php
+.. _Caver 3.0: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002708
 .. _As defined by Caver: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002708

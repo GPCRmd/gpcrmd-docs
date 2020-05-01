@@ -1,4 +1,4 @@
-All the tunnels/channels identified in the simulation are clustered by similarity. Such clusters of identified tunnels can be displayed by selecting them in the "Clusters" column.=========
+=========
 Workbench
 =========
 
@@ -212,7 +212,7 @@ Tunnels and channels
 =====================
 Displays the tunnels and channels formed in the receptor during the simulation. Tunnels are defined as void pathways leading from a cavity buried in a protein core to the surrounding solvent, while in channels both endings are opened to the surrounding solvent.
 
-Tunnels/channels are precalculated using the software `Caver 3.0`_. The starting point coordinates for apo forms and receptor-ligand structures are set to the center of mass of ligand-interacting residues in the respective PDB structure. The following input parameters are used: probe_radius=1.4, shell_radius=3, shell_depth=4. Note that we focus our analysis on the ligand-binding pocket, so tunnels/channels unrelated to the ligand-binding pocket may not be detected.
+Tunnels/channels are precalculated using the software `Caver 3.0`_. The starting point coordinates are set to the centre of the binding pocket, and the following input parameters are used: probe_radius=1.4, shell_radius=3, shell_depth=4.
 
 All the tunnels/channels identified in the simulation are clustered by similarity. Such clusters of identified tunnels can be displayed by selecting them in the "Clusters" column. 
 

@@ -38,5 +38,5 @@ html_static_path = ['_static']
 htmlhelp_basename = 'GPCRmddoc'
 
 # URL
-extlinks = {'link': ('https://devel.gpcrmd.org/%s',
+extlinks = {'link': ('https://gpcrmd.org/%s',
                       'link %s')}

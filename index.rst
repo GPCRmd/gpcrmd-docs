@@ -16,4 +16,3 @@ Welcome to GPCRmd's documentation!
    source/simulation-browser
    source/data-download
    source/citing-gpcrmd
-

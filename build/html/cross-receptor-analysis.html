@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receptor meta-analysis &mdash; develgpcrmd-docs 2.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Search" href="simulation-browser.html" />
+    <link rel="prev" title="Workbench" href="workbench.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            develgpcrmd-docs
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="workbench.html">Workbench</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Receptor meta-analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#about-the-heatmap">About the heatmap:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#about-the-top-representative-interactions-in-clusters">About the Top representative interactions in clusters:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#customized-heatmaps">Customized heatmaps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="simulation-browser.html">Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accounts.html">GPCRmd accounts guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="submission.html">Simulation submission guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-download.html">Data download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing-gpcrmd.html">Citing GPCRmd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">develgpcrmd-docs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Receptor meta-analysis</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/cross-receptor-analysis.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="receptor-meta-analysis">
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Receptor meta-analysis</a><a class="headerlink" href="#receptor-meta-analysis" title="Permalink to this heading"></a></h1>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#receptor-meta-analysis" id="id1">Receptor meta-analysis</a></p>
+<ul>
+<li><p><a class="reference internal" href="#about-the-heatmap" id="id2">About the heatmap:</a></p></li>
+<li><p><a class="reference internal" href="#about-the-top-representative-interactions-in-clusters" id="id3">About the Top representative interactions in clusters:</a></p></li>
+<li><p><a class="reference internal" href="#customized-heatmaps" id="id4">Customized heatmaps</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="about-the-heatmap">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">About the heatmap:</a><a class="headerlink" href="#about-the-heatmap" title="Permalink to this heading"></a></h2>
+<p>This plot compares the interaction pattern among several MD simulations, based on the contact frequency of each residue pair of the simulated systems (including protein-protein and protein-ligand interactions).</p>
+<p>Interaction frequencies have been calculated with <a class="reference external" href="https://github.com/getcontacts/getcontacts">GetContacts</a> scripts, created by Rasmus Fonseca (<a class="reference external" href="mailto:fonseca&#46;rasmus&#37;&#52;&#48;gmail&#46;com">fonseca<span>&#46;</span>rasmus<span>&#64;</span>gmail<span>&#46;</span>com</a>) and Anthony Ma (<a class="reference external" href="mailto:anthonyma27&#37;&#52;&#48;gmail&#46;com">anthonyma27<span>&#64;</span>gmail<span>&#46;</span>com</a>). Interaction frequencies are considered as the proportion of frames in which a residue pair is interacting, according to <a class="reference external" href="https://|URLDomain|/contmaps/contmaps/interaction_types">GetContacts interaction criteria</a>. For simulations with more than one trajectory available, the average frequencies are obtained.</p>
+<p>Based on the frequency values, a clustering analysis is performed to hierarchically classify each simulation. The obtained dendrogram is generated and displayed using <a class="reference external" href="https://github.com/plotly/plotly.py">plotly</a> python library.</p>
+<p>Protein residues are labeled using <a class="reference external" href="http://docs.gpcrdb.org/generic_numbering.html">generic GPCR residue numbers</a> (GPCRdb structure-based numbering). This numbering system differs for each GPCR class, and so a multi-class index has been used on the heatmap’s axis.</p>
+<p>Only residue pairs with a minimum of 50% interaction frequency in at least one simulation are displayed. Same-helix interactions are not displayed.</p>
+<p>How to use this heatmap:</p>
+<ol class="arabic simple">
+<li><p>Select the simulation dataset to display in the heatmap. You can filter out simulations provided by individual contributions (not generated by the GPCRmd community) by unselecting this dataset.</p></li>
+<li><p>Select the type of interaction you want to display. It is also possible to display the “total interaction frequency”, which refers to the percentage of frames on which the residue pair is interacting in any of the considered interaction types.</p></li>
+<li><p>Select the partners of the interactions to be displayed (ligand-protein or protein-protein).</p></li>
+<li><p>Select the number of clusters to differentiate on the dendrogram.</p></li>
+<li><p>Check “Show reversed residue pairs” to display interactions for the reversed residue pair (Eg: 5x43-7x32 and 7x32-5x43).</p></li>
+<li><p>Click “Apply” to load the interactions selected.</p></li>
+</ol>
+<p>More information from a selected interaction can be displayed by clicking upon its cell.</p>
+</section>
+<section id="about-the-top-representative-interactions-in-clusters">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">About the Top representative interactions in clusters:</a><a class="headerlink" href="#about-the-top-representative-interactions-in-clusters" title="Permalink to this heading"></a></h2>
+<p>These plots show the <em>n</em> most frequent interactions (on average) in each of the clusters. Interactions are colored based on the average frequency of the interaction within the cluster, according to the same color scale as the heatmap.</p>
+<p>Such plots were created using <a class="reference external" href="https://github.com/GPCRviz/flareplot">FlarePlots</a>, by Rasmus Fonseca (<a class="reference external" href="mailto:fonseca&#46;rasmus&#37;&#52;&#48;gmail&#46;com">fonseca<span>&#46;</span>rasmus<span>&#64;</span>gmail<span>&#46;</span>com</a>) and Anthony Ma (<a class="reference external" href="mailto:anthonyma27&#37;&#52;&#48;gmail&#46;com">anthonyma27<span>&#64;</span>gmail<span>&#46;</span>com</a>).</p>
+<p>How to use them:</p>
+<ol class="arabic simple">
+<li><p>To select a cluster to display, use the dropup on top of each flareplot. Cluster 1 and Cluster 2 are shown by default.</p></li>
+<li><p>To select a position on the flareplot, click on it. If available, this position will be displayed on the structure viewer below.</p></li>
+<li><p>Press “show in structure” to disable or re-enable the visualization of selected positions.</p></li>
+</ol>
+<p>The viewers at the bottom of the page (based on <a class="reference external" href="https://github.com/arose/ngl">NGL viewer</a>) display each of the simulations present in the cluster selected in the flareplot.</p>
+<p>How to use them:</p>
+<ol class="arabic simple">
+<li><p>Use the top-right dropdown to select the simulation to display. Notice only simulations of the selected cluster are available.</p></li>
+<li><p>Use the top-left dropdown to select the trajectory file of this simulation to display.</p></li>
+<li><p>Press play to reproduce the simulation on the viewer.</p></li>
+<li><p>Click on any position in the flareplot to display it on the corresponding viewer.</p></li>
+<li><p>For a more detailed visualization of this simulation, click on “open with GPCRmd Workbench”.</p></li>
+</ol>
+</section>
+<section id="customized-heatmaps">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Customized heatmaps</a><a class="headerlink" href="#customized-heatmaps" title="Permalink to this heading"></a></h2>
+<p>It is possible to analyze only a specified set of simulations using the Customized heatmaps. For that, use the “Select simulations” dropdown to specify the simulations of interest. Simulations can also be selected by clicking on their dendrogram labels. Once the selection is done, click on “Apply”.</p>
+<p>New plots showing the interactions of the simulations selected are generated. This allows for a more detailed one-to-one comparison of the interaction pattern of such simulations.</p>
+<p>Please take into account that a large simulation selection may require a long time to load.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="workbench.html" class="btn btn-neutral float-left" title="Workbench" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="simulation-browser.html" class="btn btn-neutral float-right" title="Search" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, DevGPCRmd, GPCR drug discovery group.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

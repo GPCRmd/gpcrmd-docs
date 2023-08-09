@@ -8,7 +8,6 @@ Workbench
 
 The GPCRmd Workbench includes a set of online tools for the interactive visualization (*Viewer*) and analysis (*Toolkit*) of individual simulations.
 
-
 ------
 Viewer
 ------
@@ -40,8 +39,6 @@ Mouse controls:
         Click on the blue dots to obtain information on mutational experiments done on a residue. Data obtained from GPCRdb_.
 
 If you wish to use more complex visualization options, you can open the structure and trajectories in MDsrv_ just by clicking at the gear button.
-
-
 
 Selection tools
 ===============
@@ -86,7 +83,6 @@ It is also possible to visualize the positions that correspond to conserved posi
 .. _gnomAD database: https://gnomad.broadinstitute.org/
 .. _GPCRdb: https://www.gpcrdb.org/
 .. _NGL selection language: http://proteinformatics.charite.de/ngl/doc/index.html#User_manual/Usage/Selection_language
-
 
 Experimental density maps
 ---------------------------

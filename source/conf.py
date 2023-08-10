@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'dgpcrmd-docs'
+project = 'gpcrmd-docs'
 copyright = '2023, GPCRmd, GPCR drug discovery group'
 author = 'GPCRmd'
-release = '2.0.0'
+release = '2.0.0 Fenix version'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

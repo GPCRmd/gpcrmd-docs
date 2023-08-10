@@ -72,10 +72,6 @@ One of the functions is the downloader. The main function of this tool is to dow
 
 This process take some minutes because there are large files to collect, compressed and retrieve to the user. Let it run on the background.
 
-.. image:: _static/gpcrmd_othdownrun.png
-  :width: 600
-  :alt: GPCRmd other API downloader run
-
 Once, the compressed file is created the user can see a button named "Download" to start the download of the file: 
 
 .. image:: _static/gpcrmd_othdownlink.png

@@ -15,8 +15,8 @@ Changelog
 * Instructions to follow before start the submission process as pre-submission step.  
 * Option on step 4 to upload the simulation protocol in the submission form. 
 * Option on step 5 to retrieve the information of the article using the DOI.
-* Guide to create and manage the GPCRmd account `Link <https://develgpcrmd-docs.readthedocs.io/en/latest/accounts.html>`_. 
-* Step-by-step guide to submit a submission into GPCRmd `Link <https://develgpcrmd-docs.readthedocs.io/en/latest/submission.html>`_. 
+* Guide to create and manage the GPCRmd account `Link <https://gpcrmd-docs.readthedocs.io/en/latest/accounts.html>`_. 
+* Step-by-step guide to submit a submission into GPCRmd `Link <https://gpcrmd-docs.readthedocs.io/en/latest/submission.html>`_. 
 * Secret key account parameter for the non-published simulations to give the option to share them using the link and this key.
 * Trr trajectory file format added to replace the trj format. 
 * GitHub community of GPCRmd (https://github.com/GPCRmd) if some users wants to collaborate. 

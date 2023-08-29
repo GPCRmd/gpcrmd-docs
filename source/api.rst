@@ -58,7 +58,7 @@ Once the response is recived, the user can see the json with all the information
 Other GPCRmd API
 ================
 
-This other part of the api is related with the files stored into GPCRmd. For security, to have a control of who's is downloading the data from the web it is necessary to be log in with a GPCRmd account (see `GPCRmd account guide <https://develgpcrmd-docs.readthedocs.io/en/latest/accounts.html>`_). 
+This other part of the api is related with the files stored into GPCRmd. For security, to have a control of who's is downloading the data from the web it is necessary to be log in with a GPCRmd account (see `GPCRmd account guide <https://gpcrmd-docs.readthedocs.io/en/latest/accounts.html>`_). 
 
 .. image:: _static/gpcrmd_othapi.png
   :width: 600

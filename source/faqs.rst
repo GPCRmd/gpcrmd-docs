@@ -4,11 +4,11 @@ FAQs
 
 * Q: How can I create an account in GPCRmd? 
   
-A: `GPCRmd account guide <https://develgpcrmd-docs.readthedocs.io/en/latest/accounts.html>`_
+A: `GPCRmd account guide <https://gpcrmd-docs.readthedocs.io/en/latest/accounts.html>`_
 
 * Q: How can I submit a simulation into GPCRmd? 
 
-A: `GPCRmd submission guide <https://develgpcrmd-docs.readthedocs.io/en/latest/submission.html>`_
+A: `GPCRmd submission guide <https://gpcrmd-docs.readthedocs.io/en/latest/submission.html>`_
 
 * Q: I have a format file of trajectory or topology that can I not submit. What can I do? 
 

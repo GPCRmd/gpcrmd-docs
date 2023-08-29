@@ -1,1 +1,1 @@
-# develgpcrmd-docs
+# gpcrmd-docs

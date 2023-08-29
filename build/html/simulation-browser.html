@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Search &mdash; gpcrmd-docs 2.0.0 Fenix version documentation</title>
+  <title>Simulation Browser &mdash; gpcrmd-docs 2.0.0 Fenix version documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -46,10 +46,15 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="workbench.html">Workbench</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cross-receptor-analysis.html">Receptor meta-analysis</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Search</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#filter">Filter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#browser">Browser</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#list-of-simulated-systems">List of simulated systems</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Simulation Browser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#family-tree">Family tree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gpcrmd-simulations">GPCRmd simulations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search">Search</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#filter">Filter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser">Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-of-simulated-systems">List of simulated systems</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="accounts.html">GPCRmd accounts guide</a></li>
@@ -75,7 +80,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Search</li>
+      <li class="breadcrumb-item active">Simulation Browser</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/simulation-browser.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -85,23 +90,46 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="search">
-<h1><a class="toc-backref" href="#id1" role="doc-backlink">Search</a><a class="headerlink" href="#search" title="Permalink to this heading"></a></h1>
+  <section id="simulation-browser">
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Simulation Browser</a><a class="headerlink" href="#simulation-browser" title="Permalink to this heading"></a></h1>
 <nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#search" id="id1">Search</a></p>
+<li><p><a class="reference internal" href="#simulation-browser" id="id1">Simulation Browser</a></p>
 <ul>
-<li><p><a class="reference internal" href="#filter" id="id2">Filter</a></p></li>
-<li><p><a class="reference internal" href="#browser" id="id3">Browser</a></p></li>
-<li><p><a class="reference internal" href="#list-of-simulated-systems" id="id4">List of simulated systems</a></p></li>
+<li><p><a class="reference internal" href="#family-tree" id="id2">Family tree</a></p></li>
+<li><p><a class="reference internal" href="#gpcrmd-simulations" id="id3">GPCRmd simulations</a></p></li>
+<li><p><a class="reference internal" href="#search" id="id4">Search</a></p></li>
 </ul>
 </li>
 </ul>
 </nav>
-<p>The search system is found on the <cite>Simulations</cite> block of options:</p>
+<p>The simulation browser system is found on the <cite>Simulations</cite> option:</p>
+<ul class="simple">
+<li><p>Family tree</p></li>
+<li><p>GPCRmd simulations</p></li>
+<li><p>Search</p></li>
+</ul>
 <a class="reference internal image-reference" href="_images/search_option.png"><img alt="GPCRmd search option" src="_images/search_option.png" style="width: 600px;" /></a>
-<p>The <cite>Search</cite> system is divided into 3 parts:</p>
+<section id="family-tree">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Family tree</a><a class="headerlink" href="#family-tree" title="Permalink to this heading"></a></h2>
+<p>The Family tree is a visual representation of each GPCR family and subfamily ending on a pdb identifier.</p>
+<a class="reference internal image-reference" href="_images/family_tree.png"><img alt="GPCRmd family tree" src="_images/family_tree.png" style="width: 600px;" /></a>
+<p>The user can zoom in/out and drag around the tree. If the user hover on each pdb identifier the graph will display a box with all the simulations related to this code:</p>
+<a class="reference internal image-reference" href="_images/family_tree_display.png"><img alt="GPCRmd family tree display" src="_images/family_tree_display.png" style="width: 600px;" /></a>
+<p>Clicking in the blue link the user will be redirected to the GPCRmd viewer. In case that the user wants to restore the position, only need to click on the button “Reset view” on the box next to the tree:</p>
+<a class="reference internal image-reference" href="_images/family_tree_reset.png"><img alt="GPCRmd family tree display" src="_images/family_tree_reset.png" style="width: 600px;" /></a>
+</section>
+<section id="gpcrmd-simulations">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">GPCRmd simulations</a><a class="headerlink" href="#gpcrmd-simulations" title="Permalink to this heading"></a></h2>
+<p>Here, the user can identify all simulations included into GPCRmd divided into two datasets: GPCRmd community contributions and individual contributions.</p>
+<a class="reference internal image-reference" href="_images/dataset.png"><img alt="GPCRmd dataset" src="_images/dataset.png" style="width: 600px;" /></a>
+<p>Each simulation is classified into each class, family and subfamily. Similar than the Family tree but grouped. The user can expand each of these groups until get the simulations related to a specific family. To view the simulation the user can click on the red text link (e.g. ID 90).</p>
+<a class="reference internal image-reference" href="_images/dataset_display.png"><img alt="GPCRmd dataset display" src="_images/dataset_display.png" style="width: 600px;" /></a>
+</section>
+<section id="search">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Search</a><a class="headerlink" href="#search" title="Permalink to this heading"></a></h2>
+<p>The <cite>Search</cite> tool is divided into 3 parts:</p>
 <ul class="simple">
 <li><p>Filter</p></li>
 <li><p>Browser</p></li>
@@ -109,23 +137,24 @@
 </ul>
 <a class="reference internal image-reference" href="_images/search.png"><img alt="GPCRmd search" src="_images/search.png" style="width: 600px;" /></a>
 <section id="filter">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Filter</a><a class="headerlink" href="#filter" title="Permalink to this heading"></a></h2>
+<h3>Filter<a class="headerlink" href="#filter" title="Permalink to this heading"></a></h3>
 <p>This part of the Search contains the name of all the columns available to be displayed in the search table. The user can select or deselect the columns that it wants to be displayed into the table. In the next example the user select the columns: Uniprot id, Class, PDB id, State, Species, Model type and Num. of atoms.</p>
 <a class="reference internal image-reference" href="_images/search_filter.png"><img alt="GPCRmd search filter" src="_images/search_filter.png" style="width: 600px;" /></a>
 </section>
 <section id="browser">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Browser</a><a class="headerlink" href="#browser" title="Permalink to this heading"></a></h2>
+<h3>Browser<a class="headerlink" href="#browser" title="Permalink to this heading"></a></h3>
 <p>The Browser provides to the user filter everything that it is written in the cell.</p>
 <a class="reference internal image-reference" href="_images/search_browser.png"><img alt="GPCRmd search browser" src="_images/search_browser.png" style="width: 600px;" /></a>
 </section>
 <section id="list-of-simulated-systems">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">List of simulated systems</a><a class="headerlink" href="#list-of-simulated-systems" title="Permalink to this heading"></a></h2>
+<h3>List of simulated systems<a class="headerlink" href="#list-of-simulated-systems" title="Permalink to this heading"></a></h3>
 <p>The table rows contain a summary of the most important features of the simulations. This includes links o further details of the receptor and molecules present in the simulated system.</p>
 <ul class="simple">
 <li><p>Clicking on “View” to visualize and analyze the simulation.</p></li>
 <li><p>Clicking on “Report”, you will access the details of the system setup and simulation protocol, as well as links to download the simulation data.</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/search.png"><img alt="GPCRmd search list" src="_images/search.png" style="width: 600px;" /></a>
+</section>
 </section>
 </section>
 

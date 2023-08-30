@@ -8,14 +8,11 @@ Welcome to GPCRmd's documentation!
 
 .. toctree::
    :caption: Contents:
+   :maxdepth: 2
 
-   workbench
-   cross-receptor-analysis
-   simulation-browser
-   accounts
+   tools 
+   simulations
    submission
-   api
-   data-download
    citing-gpcrmd
    faqs
    changelog

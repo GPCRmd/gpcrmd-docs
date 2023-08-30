@@ -1,6 +1,6 @@
-=========
-Workbench
-=========
+====================
+Simulation workbench
+====================
 
 .. contents::
     :depth: 2

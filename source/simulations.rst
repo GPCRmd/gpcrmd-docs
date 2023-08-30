@@ -2,14 +2,10 @@
 Simulation Browser
 ==================
 
-.. contents::
+The simulation browser system is all the options found on the `Simulations` block:
+
+.. contents:: 
     :depth: 2
-
-The simulation browser system is found on the `Simulations` option:
-
-* Family tree
-* GPCRmd simulations
-* Search
 
 .. image:: _static/search_option.png
   :width: 600
@@ -34,7 +30,7 @@ The user can zoom in/out and drag around the tree. If the user hover on each pdb
 Clicking in the blue link the user will be redirected to the GPCRmd viewer. In case that the user wants to restore the position, only need to click on the button "Reset view" on the box next to the tree:
 
 .. image:: _static/family_tree_reset.png
-  :width: 600
+  :width: 300
   :alt: GPCRmd family tree display
 
 ------------------

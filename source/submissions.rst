@@ -10,7 +10,7 @@ To upload submissions into GPCRmd you must need an account. The creation of an a
 Pre-submission
 ==============
 
-In the case that you already have an account you need to log in from the next url: :link:`accounts/login/`. Here, you will need the credencials of your account to acces into the submission form.
+In the case that you already have an account you need to log in from `Link <https://www.gpcrmd.org/accounts/login>`_. Here, you will need the credencials of your account to acces into the submission form.
 
 .. image:: _static/gpcrmd_acclogin.png
   :width: 600
@@ -114,7 +114,7 @@ If not you can add the information with two ways:
 * Automatically using the retrieve box on the top writing the **InChIKey** in or,
 
 .. image:: _static/gpcrmd_step2retri.png
-  :width: 600
+  :width: 300
   :alt: Submission form step 2
 
 * Manually using the Edit checkbox.   
@@ -165,7 +165,7 @@ Like the step 2, you can add the information with two ways:
 * Automatically using the retrieve box on the top writing the **UniProtKb** in or,  
 
 .. image:: _static/gpcrmd_step3retri.png
-  :width: 600
+  :width: 300
   :alt: Submission form step 3 retrieve
 
 * Manually using the Edit checkbox.   
@@ -187,7 +187,7 @@ The parameters of each entry are:
 In case that the protein is not on Uniprot, you can use the checkbox option on the top right "Not in Uniprot". Then the web did not ask about a UniprotKbac but the organism is obligatory. 
 
 .. image:: _static/gpcrmd_step3nouni.png
-  :width: 600
+  :width: 300
   :alt: Submission form step 3 no Uniprot
 
 Segments
@@ -268,7 +268,7 @@ As some of the previous steps, the user can add the information automatically, u
 
 This step5 can be omitted temporarily, but please do not forget to fill it in once you have all the information about your publication. Also, all submissions sharing the same DOI will be provided with a summary page to include in the references of your paper. If you put a random token (e.g.: abysms) in the DOI field and submit it like that a page will also be generated, and you will be able to change it later. 
 
-Example: :link:`dynadb/publications/1486/ `
+Example: `Link <https://www.gpcrmd.org/dynadb/publications/1486/>`_
 
 .. image:: _static/gpcrmd_pubpage.png
   :width: 600

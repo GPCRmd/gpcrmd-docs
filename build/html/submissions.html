@@ -18,7 +18,9 @@
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Citing GPCRmd" href="citing-gpcrmd.html" />
+    <link rel="prev" title="GPCRmd accounts guide" href="accounts.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,9 +43,34 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="tools.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="simulations.html">Simulation Browser</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="submission.html">Submission</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="accounts.html">GPCRmd accounts guide</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Simulation submission guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pre-submission">Pre-submission</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-general-information">Step 1: General Information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#a-system-information">A) System information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#b-simulation-specifications">B) Simulation specifications</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#c-coordinates-files">C) Coordinates files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-small-molecules">Step 2: Small Molecules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-protein-chains">Step 3: Protein chains</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#protein-information">Protein information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segments">Segments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mutations">Mutations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#step-4-simulation-files">Step 4: Simulation files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-5-simulation-files">Step 5: Simulation files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#submission-summary">Submission summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#submission-list">Submission list</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="citing-gpcrmd.html">Citing GPCRmd</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
@@ -63,6 +90,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="submission.html">Submission</a></li>
       <li class="breadcrumb-item active">Simulation submission guide</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/submissions.rst.txt" rel="nofollow"> View page source</a>
@@ -74,28 +102,28 @@
            <div itemprop="articleBody">
              
   <section id="simulation-submission-guide">
-<h1><a class="toc-backref" href="#id3" role="doc-backlink">Simulation submission guide</a><a class="headerlink" href="#simulation-submission-guide" title="Permalink to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id2" role="doc-backlink">Simulation submission guide</a><a class="headerlink" href="#simulation-submission-guide" title="Permalink to this heading"></a></h1>
 <nav class="contents" id="the-simulation-submission-process-consists-in-several-steps">
 <p class="topic-title">The simulation submission process consists in several steps:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#simulation-submission-guide" id="id3">Simulation submission guide</a></p>
+<li><p><a class="reference internal" href="#simulation-submission-guide" id="id2">Simulation submission guide</a></p>
 <ul>
-<li><p><a class="reference internal" href="#pre-submission" id="id4">Pre-submission</a></p></li>
-<li><p><a class="reference internal" href="#step-1-general-information" id="id5">Step 1: General Information</a></p></li>
-<li><p><a class="reference internal" href="#step-2-small-molecules" id="id6">Step 2: Small Molecules</a></p></li>
-<li><p><a class="reference internal" href="#step-3-protein-chains" id="id7">Step 3: Protein chains</a></p></li>
-<li><p><a class="reference internal" href="#step-4-simulation-files" id="id8">Step 4: Simulation files</a></p></li>
-<li><p><a class="reference internal" href="#step-5-simulation-files" id="id9">Step 5: Simulation files</a></p></li>
-<li><p><a class="reference internal" href="#submission-summary" id="id10">Submission summary</a></p></li>
-<li><p><a class="reference internal" href="#submission-list" id="id11">Submission list</a></p></li>
+<li><p><a class="reference internal" href="#pre-submission" id="id3">Pre-submission</a></p></li>
+<li><p><a class="reference internal" href="#step-1-general-information" id="id4">Step 1: General Information</a></p></li>
+<li><p><a class="reference internal" href="#step-2-small-molecules" id="id5">Step 2: Small Molecules</a></p></li>
+<li><p><a class="reference internal" href="#step-3-protein-chains" id="id6">Step 3: Protein chains</a></p></li>
+<li><p><a class="reference internal" href="#step-4-simulation-files" id="id7">Step 4: Simulation files</a></p></li>
+<li><p><a class="reference internal" href="#step-5-simulation-files" id="id8">Step 5: Simulation files</a></p></li>
+<li><p><a class="reference internal" href="#submission-summary" id="id9">Submission summary</a></p></li>
+<li><p><a class="reference internal" href="#submission-list" id="id10">Submission list</a></p></li>
 </ul>
 </li>
 </ul>
 </nav>
 <p>To upload submissions into GPCRmd you must need an account. The creation of an account is explained in the account section.</p>
 <section id="pre-submission">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Pre-submission</a><a class="headerlink" href="#pre-submission" title="Permalink to this heading"></a></h2>
-<p>In the case that you already have an account you need to log in from the next url: <a class="reference external" href="https://gpcrmd.org/accounts/login/">link accounts/login/</a>. Here, you will need the credencials of your account to acces into the submission form.</p>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Pre-submission</a><a class="headerlink" href="#pre-submission" title="Permalink to this heading"></a></h2>
+<p>In the case that you already have an account you need to log in from <a class="reference external" href="https://www.gpcrmd.org/accounts/login">Link</a>. Here, you will need the credencials of your account to acces into the submission form.</p>
 <a class="reference internal image-reference" href="_images/gpcrmd_acclogin.png"><img alt="GPCRmd log in page" src="_images/gpcrmd_acclogin.png" style="width: 600px;" /></a>
 <p>When you log in you will see the Pre-submission step. Here, it is explained very brief what the user need to consider before start the submission process:</p>
 <a class="reference internal image-reference" href="_images/gpcrmd_accin.png"><img alt="GPCRmd pre submission page" src="_images/gpcrmd_accin.png" style="width: 600px;" /></a>
@@ -123,7 +151,7 @@
 <p>Once, the files are checked and prepared you can click on “New Submission” to start with the step 1 of the submission form: General information.</p>
 </section>
 <section id="step-1-general-information">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Step 1: General Information</a><a class="headerlink" href="#step-1-general-information" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Step 1: General Information</a><a class="headerlink" href="#step-1-general-information" title="Permalink to this heading"></a></h2>
 <p>The first step is divided into three blocks. Next, it is explain each parameter:</p>
 <section id="a-system-information">
 <h3>A) System information<a class="headerlink" href="#a-system-information" title="Permalink to this heading"></a></h3>
@@ -167,7 +195,7 @@
 </section>
 </section>
 <section id="step-2-small-molecules">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Step 2: Small Molecules</a><a class="headerlink" href="#step-2-small-molecules" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Step 2: Small Molecules</a><a class="headerlink" href="#step-2-small-molecules" title="Permalink to this heading"></a></h2>
 <p>When the step 1 is submitted the system will analyze your structure uploaded. In this second step GPCRmd will list all the small molecules that it be found one by one as entries from 0 to N. Please, provide a detailed chemical description of all non-protein molecules in your system. This extensive information will help to provide a platform of well-characterized molecules for screening purposes to medicinal chemists and chemoinformaticians.</p>
 <p>If GPCRmd have information about the small molecule you will see the next:</p>
 <a class="reference internal image-reference" href="_images/gpcrmd_step2auto.png"><img alt="Submission form step 2 autofill" src="_images/gpcrmd_step2auto.png" style="width: 600px;" /></a>
@@ -175,7 +203,7 @@
 <ul class="simple">
 <li><p>Automatically using the retrieve box on the top writing the <strong>InChIKey</strong> in or,</p></li>
 </ul>
-<a class="reference internal image-reference" href="_images/gpcrmd_step2retri.png"><img alt="Submission form step 2" src="_images/gpcrmd_step2retri.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/gpcrmd_step2retri.png"><img alt="Submission form step 2" src="_images/gpcrmd_step2retri.png" style="width: 300px;" /></a>
 <ul class="simple">
 <li><p>Manually using the Edit checkbox.</p></li>
 </ul>
@@ -206,7 +234,7 @@
 <p>Then click on the submit button of the bottom to continue to the next step.</p>
 </section>
 <section id="step-3-protein-chains">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Step 3: Protein chains</a><a class="headerlink" href="#step-3-protein-chains" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Step 3: Protein chains</a><a class="headerlink" href="#step-3-protein-chains" title="Permalink to this heading"></a></h2>
 <p>In this step, like step 2, the tool will display all the chain that he found in the file uploaded in the step 1. Here, also the tool will perform an alignment with an Uniprot entry as reference to detect possible mutations. For this reason, is REALLY important to be sure that the chains are correct to upload correctly the submission.</p>
 <section id="protein-information">
 <h3>Protein information<a class="headerlink" href="#protein-information" title="Permalink to this heading"></a></h3>
@@ -214,7 +242,7 @@
 <ul class="simple">
 <li><p>Automatically using the retrieve box on the top writing the <strong>UniProtKb</strong> in or,</p></li>
 </ul>
-<a class="reference internal image-reference" href="_images/gpcrmd_step3retri.png"><img alt="Submission form step 3 retrieve" src="_images/gpcrmd_step3retri.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/gpcrmd_step3retri.png"><img alt="Submission form step 3 retrieve" src="_images/gpcrmd_step3retri.png" style="width: 300px;" /></a>
 <ul class="simple">
 <li><p>Manually using the Edit checkbox.</p></li>
 </ul>
@@ -231,7 +259,7 @@
 </div></blockquote>
 <a class="reference internal image-reference" href="_images/gpcrmd_step3manual.png"><img alt="Submission form step 3 auto manual" src="_images/gpcrmd_step3manual.png" style="width: 600px;" /></a>
 <p>In case that the protein is not on Uniprot, you can use the checkbox option on the top right “Not in Uniprot”. Then the web did not ask about a UniprotKbac but the organism is obligatory.</p>
-<a class="reference internal image-reference" href="_images/gpcrmd_step3nouni.png"><img alt="Submission form step 3 no Uniprot" src="_images/gpcrmd_step3nouni.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/gpcrmd_step3nouni.png"><img alt="Submission form step 3 no Uniprot" src="_images/gpcrmd_step3nouni.png" style="width: 300px;" /></a>
 </section>
 <section id="segments">
 <h3>Segments<a class="headerlink" href="#segments" title="Permalink to this heading"></a></h3>
@@ -264,7 +292,7 @@
 </section>
 </section>
 <section id="step-4-simulation-files">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Step 4: Simulation files</a><a class="headerlink" href="#step-4-simulation-files" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Step 4: Simulation files</a><a class="headerlink" href="#step-4-simulation-files" title="Permalink to this heading"></a></h2>
 <p>The next step is to upload the files that in the pre-submission step was required to be checked and prepared. <em>Note: example downloadble files in the step Pre-submission.</em></p>
 <blockquote>
 <div><ul class="simple">
@@ -279,7 +307,7 @@
 <p>When the user finished to upload the files it can be submitted. This step needs some extra time depending on the size of files uploaded into GPCRmd.</p>
 </section>
 <section id="step-5-simulation-files">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink">Step 5: Simulation files</a><a class="headerlink" href="#step-5-simulation-files" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Step 5: Simulation files</a><a class="headerlink" href="#step-5-simulation-files" title="Permalink to this heading"></a></h2>
 <p>As some of the previous steps, the user can add the information automatically, using the retrieve option with a doi, or write it manually.</p>
 <blockquote>
 <div><ul class="simple">
@@ -297,11 +325,11 @@
 </div></blockquote>
 <a class="reference internal image-reference" href="_images/gpcrmd_step5.png"><img alt="Submission form step 5" src="_images/gpcrmd_step5.png" style="width: 600px;" /></a>
 <p>This step5 can be omitted temporarily, but please do not forget to fill it in once you have all the information about your publication. Also, all submissions sharing the same DOI will be provided with a summary page to include in the references of your paper. If you put a random token (e.g.: abysms) in the DOI field and submit it like that a page will also be generated, and you will be able to change it later.</p>
-<p>Example: :link:<a href="#id1"><span class="problematic" id="id2">`</span></a>dynadb/publications/1486/ `</p>
+<p>Example: <a class="reference external" href="https://www.gpcrmd.org/dynadb/publications/1486/">Link</a></p>
 <a class="reference internal image-reference" href="_images/gpcrmd_pubpage.png"><img alt="Publication page" src="_images/gpcrmd_pubpage.png" style="width: 600px;" /></a>
 </section>
 <section id="submission-summary">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Submission summary</a><a class="headerlink" href="#submission-summary" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Submission summary</a><a class="headerlink" href="#submission-summary" title="Permalink to this heading"></a></h2>
 <p>Once, the user submit the step 5 and all runs correctly, the page will show the summary of the whole process. Here, the user can check everything about the submission performed but it can not be edit from here. To edit the information, the user needs to go back to the step that wants to change. Also, the page provided the identifier of the submission and the dynamic into GPCRmd.</p>
 <a class="reference internal image-reference" href="_images/gpcrmd_subsum.png"><img alt="Submission summary general" src="_images/gpcrmd_subsum.png" style="width: 600px;" /></a>
 <p>If the user click on the button “Visualize simulation in GPCRmd workbench”, the page will redirect the user to a previsualization of the structure in the viewer. As the submission is “non-published”, because the user needs to confirm  and close the submission, the web will ask about the dynamic id and the secret key associted to the user to acces into the viewer.</p>
@@ -330,7 +358,7 @@
 <a class="reference internal image-reference" href="_images/gpcrmd_subsumdown.png"><img alt="Submission summary downloader" src="_images/gpcrmd_subsumdown.png" style="width: 600px;" /></a>
 </section>
 <section id="submission-list">
-<h2><a class="toc-backref" href="#id11" role="doc-backlink">Submission list</a><a class="headerlink" href="#submission-list" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Submission list</a><a class="headerlink" href="#submission-list" title="Permalink to this heading"></a></h2>
 <p>In case that the user wants to return to some of the steps in the submission form, it is necessary from the “Submission” home.</p>
 <a class="reference internal image-reference" href="_images/gpcrmd_accin.png"><img alt="GPCRmd pre submission page" src="_images/gpcrmd_accin.png" style="width: 600px;" /></a>
 <p>Here, clicking on “Previous submissions” the user can see a list of all the submissions uploaded to GPCRmd. In this page, the user have 5 options:</p>
@@ -348,7 +376,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="accounts.html" class="btn btn-neutral float-left" title="GPCRmd accounts guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="citing-gpcrmd.html" class="btn btn-neutral float-right" title="Citing GPCRmd" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

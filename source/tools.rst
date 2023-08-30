@@ -2,7 +2,7 @@
 Tools
 =====
 
-The tools system is all the options found on the `Tools` block:
+The tools system englobe all the options found on the `Tools` block:
 
 .. toctree:: 
   :caption: Contents:

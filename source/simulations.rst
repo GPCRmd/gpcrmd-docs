@@ -2,7 +2,7 @@
 Simulation Browser
 ==================
 
-The simulation browser system is all the options found on the `Simulations` block:
+The simulation browser system englobe all the options found on the `Simulations` block:
 
 .. contents:: 
     :depth: 2

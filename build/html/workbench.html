@@ -171,7 +171,7 @@
 <section id="trajectory-player">
 <h5>Trajectory player:<a class="headerlink" href="#trajectory-player" title="Permalink to this heading"></a></h5>
 <p>This bar is controls the display of the trajectory along the simulation. The user can run, pause or select an specific frame writing it on the small cell. Also, at the end of the bar it is display the trajectory id and the time in nanoseconds.</p>
-<a class="reference internal image-reference" href="_images/tools_viewer_tplay.png"><img alt="GPCRmd viewer trajectory player" src="_images/tools_viewer_tplay.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tools_viewer_tplay.png"><img alt="GPCRmd viewer trajectory player" src="_images/tools_viewer_tplay.png" style="width: 600px;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The playback speed is slower while loading frames for the first time. Playback speed is back to normal for frames played a second time.</p>
@@ -190,7 +190,7 @@
 <li><p><strong>Advanced visualization</strong>: open the structure and trajectories in MDsrv_to use more complex visualization options.</p></li>
 <li><p><strong>More settings options</strong>: more extra functions about the display of the structure in the viewer. Options like show hidrogens, spin the structure, or change the trajectory step size and timeout, among others.</p></li>
 </ul>
-<a class="reference internal image-reference" href="_images/tools_viewer_extra.png"><img alt="GPCRmd viewer extra options" src="_images/tools_viewer_extra.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tools_viewer_extra.png"><img alt="GPCRmd viewer extra options" src="_images/tools_viewer_extra.png" style="width: 600px;" /></a>
 </section>
 </section>
 <section id="selection-tools">
@@ -198,7 +198,7 @@
 <section id="structure-selection">
 <h4>Structure selection:<a class="headerlink" href="#structure-selection" title="Permalink to this heading"></a></h4>
 <p>The user can choose one of the selections we propose or define a new one (Customized selection option) using the <a class="reference external" href="http://nglviewer.org/ngl/api/manual/usage/selection-language.html">NGL selection language</a>.</p>
-<a class="reference internal image-reference" href="_images/tools_viewer_sele.png"><img alt="GPCRmd viewer selection" src="_images/tools_viewer_sele.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tools_viewer_sele.png"><img alt="GPCRmd viewer selection" src="_images/tools_viewer_sele.png" style="width: 600px;" /></a>
 <section id="quick-selection">
 <h5>Quick selection:<a class="headerlink" href="#quick-selection" title="Permalink to this heading"></a></h5>
 <p>Quick-selection buttons allow to rapidly display the molecules present at the dynamics. Hover the buttons with your mouse to see the abbreviated name of these molecules, which can be used to create your own selections.</p>
@@ -209,7 +209,7 @@
 <li><p>Indicate the molecule type around which the selection is made. Apart from predefined molecules, it is also possible to show the residues/molecules that are close to a personalized selection which, again, can include generic GPCR residue numbering.</p></li>
 </ol>
 <p>If the selection is correct, a green checkmark will appear on the left. More than one distance selection can be displayed at the same time. Selections made with this tool will appear in coral red. The distance selection will be updated for each trajectory frame, as the disposition of the atoms may change.</p>
-<a class="reference internal image-reference" href="_images/tools_viewer_squick.png"><img alt="GPCRmd viewer quick selection" src="_images/tools_viewer_squick.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tools_viewer_squick.png"><img alt="GPCRmd viewer quick selection" src="_images/tools_viewer_squick.png" style="width: 600px;" /></a>
 </section>
 <section id="custom-selection">
 <h5>Custom selection:<a class="headerlink" href="#custom-selection" title="Permalink to this heading"></a></h5>
@@ -217,24 +217,24 @@
 <p>Selections must be expressed using the <a class="reference external" href="http://nglviewer.org/ngl/api/manual/usage/selection-language.html">NGL selection language</a>. Moreover, to indicate protein residues it is also possible to use <strong>generic GPCR residue numbering</strong>: Ballesteros-Weinstein (ex. 1.50), GPCRdb structure-based numbering (ex. 1x50) or a combination of both (ex. 1.50x50).</p>
 <p>For example, if you input <code class="docutils literal notranslate"><span class="pre">40-70:P</span> <span class="pre">or</span> <span class="pre">CLZ</span></code>, residues numbered from 40 to 70 at the PDB belonging to chain P and Clozapine will be displayed. Another example, this time using a combination of different generic GPCR numbering styles, could be <code class="docutils literal notranslate"><span class="pre">1.50</span> <span class="pre">-</span> <span class="pre">2x48</span> <span class="pre">or</span> <span class="pre">3.35x35</span> <span class="pre">or</span> <span class="pre">SOD</span></code>.</p>
 <p>If your selection includes water and/or membrane molecules that you wish to display, check ‘Include membrane and water’. This may slow down the playback speed of the simulation.</p>
-<a class="reference internal image-reference" href="_images/tools_viewer_scustom.png"><img alt="GPCRmd viewer quick selection" src="_images/tools_viewer_scustom.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tools_viewer_scustom.png"><img alt="GPCRmd viewer quick selection" src="_images/tools_viewer_scustom.png" style="width: 600px;" /></a>
 </section>
 <section id="sequence-selection">
 <h5>Sequence selection:<a class="headerlink" href="#sequence-selection" title="Permalink to this heading"></a></h5>
 <p>The GPCR Workbench also provides the option to select a protein segment from its sequence. Set your selection by clicking at the desired range or ranges of residues. Selected segments will appear at the sequence in green. To deselect a residue range from the sequence, just click on it. Finally, click at <strong>Confirm selection</strong>: the residue range(s) will be added to a text input field, which you can further modify to adjust the selection. If you want to add new sequence selections, click at the plus button.</p>
-<a class="reference internal image-reference" href="_images/tools_viewer_sseq.png"><img alt="GPCRmd viewer quick selection" src="_images/tools_viewer_sseq.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tools_viewer_sseq.png"><img alt="GPCRmd viewer quick selection" src="_images/tools_viewer_sseq.png" style="width: 600px;" /></a>
 </section>
 <section id="gpcr-conserved-positions">
 <h5>GPCR conserved positions:<a class="headerlink" href="#gpcr-conserved-positions" title="Permalink to this heading"></a></h5>
 <p>This section provides the possibility to rapidly select positions or domains conserved in the different GPCR family classes. The GPCR class of the protein being represented will be selected by default, and therefore the conserved positions/domains corresponding to that GPCR class will be available to visualize.</p>
 <p>It is also possible to visualize the positions that correspond to conserved positions from other GPCR classes. For example, if your protein belongs to class A, you can represent the residue that corresponds to class B <em>2.50 (2.50b)</em>. Hover the buttons with your mouse for more information about the conserved positions and motifs, if available.</p>
-<a class="reference internal image-reference" href="_images/tools_viewer_spos.png"><img alt="GPCRmd viewer quick selection" src="_images/tools_viewer_spos.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tools_viewer_spos.png"><img alt="GPCRmd viewer quick selection" src="_images/tools_viewer_spos.png" style="width: 600px;" /></a>
 </section>
 </section>
 <section id="experimental-density-map">
 <h4>Experimental density map:<a class="headerlink" href="#experimental-density-map" title="Permalink to this heading"></a></h4>
 <p>Display X-ray or electron microscopy density maps by defining any selection within this section. By default, this will also modify the representation of the molecules of the system. To change this behavior, un-select the option “Apply default representations” within <em>Selection settings</em>.</p>
-<a class="reference internal image-reference" href="_images/tools_viewer_setden.png"><img alt="GPCRmd viewer quick selection" src="_images/tools_viewer_setden.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tools_viewer_setden.png"><img alt="GPCRmd viewer quick selection" src="_images/tools_viewer_setden.png" style="width: 600px;" /></a>
 </section>
 </section>
 </section>

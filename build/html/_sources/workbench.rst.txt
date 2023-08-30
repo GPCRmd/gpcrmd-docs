@@ -78,7 +78,7 @@ Trajectory player:
 This bar is controls the display of the trajectory along the simulation. The user can run, pause or select an specific frame writing it on the small cell. Also, at the end of the bar it is display the trajectory id and the time in nanoseconds.
 
 .. image:: _static/tools_viewer_tplay.png
-  :width: 300
+  :width: 600
   :alt: GPCRmd viewer trajectory player
 
 .. note::
@@ -98,7 +98,7 @@ Also, the user have some extra options:
 * **More settings options**: more extra functions about the display of the structure in the viewer. Options like show hidrogens, spin the structure, or change the trajectory step size and timeout, among others.
 
 .. image:: _static/tools_viewer_extra.png
-  :width: 300
+  :width: 600
   :alt: GPCRmd viewer extra options
 
 Selection tools:
@@ -110,7 +110,7 @@ Structure selection:
 The user can choose one of the selections we propose or define a new one (Customized selection option) using the `NGL selection language <http://nglviewer.org/ngl/api/manual/usage/selection-language.html>`_.
 
 .. image:: _static/tools_viewer_sele.png
-  :width: 300
+  :width: 600
   :alt: GPCRmd viewer selection
 
 Quick selection:
@@ -127,7 +127,7 @@ In the case of Structure selections, It is also possible to select the residues 
 If the selection is correct, a green checkmark will appear on the left. More than one distance selection can be displayed at the same time. Selections made with this tool will appear in coral red. The distance selection will be updated for each trajectory frame, as the disposition of the atoms may change.
 
 .. image:: _static/tools_viewer_squick.png
-  :width: 300
+  :width: 600
   :alt: GPCRmd viewer quick selection
 
 Custom selection:
@@ -142,7 +142,7 @@ For example, if you input ``40-70:P or CLZ``, residues numbered from 40 to 70 at
 If your selection includes water and/or membrane molecules that you wish to display, check 'Include membrane and water'. This may slow down the playback speed of the simulation.
 
 .. image:: _static/tools_viewer_scustom.png
-  :width: 300
+  :width: 600
   :alt: GPCRmd viewer quick selection
 
 Sequence selection:
@@ -151,7 +151,7 @@ Sequence selection:
 The GPCR Workbench also provides the option to select a protein segment from its sequence. Set your selection by clicking at the desired range or ranges of residues. Selected segments will appear at the sequence in green. To deselect a residue range from the sequence, just click on it. Finally, click at **Confirm selection**: the residue range(s) will be added to a text input field, which you can further modify to adjust the selection. If you want to add new sequence selections, click at the plus button.
 
 .. image:: _static/tools_viewer_sseq.png
-  :width: 300
+  :width: 600
   :alt: GPCRmd viewer quick selection
 
 GPCR conserved positions:
@@ -162,7 +162,7 @@ This section provides the possibility to rapidly select positions or domains con
 It is also possible to visualize the positions that correspond to conserved positions from other GPCR classes. For example, if your protein belongs to class A, you can represent the residue that corresponds to class B *2.50 (2.50b)*. Hover the buttons with your mouse for more information about the conserved positions and motifs, if available.
 
 .. image:: _static/tools_viewer_spos.png
-  :width: 300
+  :width: 600
   :alt: GPCRmd viewer quick selection
 
 .. _MDsrv: http://nglviewer.org/mdsrv/
@@ -176,7 +176,7 @@ Experimental density map:
 Display X-ray or electron microscopy density maps by defining any selection within this section. By default, this will also modify the representation of the molecules of the system. To change this behavior, un-select the option "Apply default representations" within *Selection settings*.
 
 .. image:: _static/tools_viewer_setden.png
-  :width: 300
+  :width: 600
   :alt: GPCRmd viewer quick selection
 
 -------

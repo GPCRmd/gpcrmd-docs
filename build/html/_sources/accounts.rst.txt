@@ -35,7 +35,8 @@ Once, you contact us we will send to you a link to a register form that must be 
 
 The **secret submission key** is a password used to protect the non-published submissions. If you wanna share with others the link of these submissions is necessary to access using this key. 
 
-**IMPORTANT NOTE**: Save the password safety because from here you can only reset the password, not recover it. 
+.. warning::
+  Save the password safety because from here you can only reset the password, not recover it. 
 
 Click on submit and if all the process runs correctly the user will obtain a message confirm it. 
 
@@ -81,7 +82,8 @@ At the home account page, in the top of the right box, the user have some option
   :width: 600
   :alt: GPCRmd log in
 
-*Note: Click on the email to change it.*
+.. note::
+  Click on the email to change it.
 
 * **Change password**: change the password of the account.
   

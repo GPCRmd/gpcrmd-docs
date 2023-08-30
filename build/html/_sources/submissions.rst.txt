@@ -232,13 +232,16 @@ At the end, the user can add manually a new protein entry with the click on the 
 Step 4: Simulation files
 ========================
 
-The next step is to upload the files that in the pre-submission step was required to be checked and prepared. *Note: example downloadble files in the step Pre-submission.*  
+The next step is to upload the files that in the pre-submission step was required to be checked and prepared. 
 
     * **Topology file**: list of the atoms, masses, charges and connections between atoms. The Currently, GPCRmd accepts the next extensions: psf, top.
     * **Trajectory file**: sequential snapshots of simulated molecular system which represents atomic coordinates at specific time periods. The use can select more than one. Currently, GPCRmd accepts the next extensions: dcd, xtc, trr.
     * **Simulation parameters**: contains all the input parameters. Currently, GPCRmd accepts the next extensions: prm, prmtop, zip, tar.gz, tgz.
     * **Simulation protocol**: group of files used to launch the simulation. Necessary in case of replica. Currently, GPCRmd accepts the next extensions: zip, tar.gz, tgz. 
     * **Other**: files that are considered relevant for the submission. Currently, GPCRmd accepts the next extensions: tar.gz, tgz, zip.
+
+.. note::
+  Can you download example files in the previous step "Pre-submission". 
 
 .. image:: _static/gpcrmd_step4files.png
   :width: 600
@@ -370,7 +373,10 @@ Here, clicking on "Previous submissions" the user can see a list of all the subm
 * **Report**: access to the GPCRmd report displaying detailed information about the simulation.
 * **Open**: access to the submission form to edit the information of each of the steps.
 * **Delete**: delete the submission and all the files related.
-* **Close**: confirm that the submission is correct and is prepared to be published into GPCRmd and be analyzed. *Note: this action is an irreversible process (check the example, the second submission id 1476 is closed and the user can only see the summary).*
+* **Close**: confirm that the submission is correct and is prepared to be published into GPCRmd and be analyzed. 
+
+.. warning:: 
+  The Close action is an irreversible process (check the example, the second submission id 1476 is closed and the user can only see the summary).*
    
 .. image:: _static/gpcrmd_accprevious.png
   :width: 600

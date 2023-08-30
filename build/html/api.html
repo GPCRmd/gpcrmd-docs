@@ -114,11 +114,19 @@
 <p>All the functions are GET functions but mainly, there are two types of functions: without input parameters or with them.</p>
 <p>For one side, the functions without the need to use a parameter as input, like <cite>search_all_pdbs</cite>, the user only need to click on “Try out” and then on “Execute”.</p>
 <a class="reference internal image-reference" href="_images/gpcrmd_apinoparam.png"><img alt="GPCRmd functions without parameters" src="_images/gpcrmd_apinoparam.png" style="width: 600px;" /></a>
-<p>Next, the server will process the request of the user retrieving the result. In the example case of <cite>search_all_pdbs</cite>, the response is a json with all the codes PDB stored in GPCRmd. <em>Note: the user can download this json using the “Download” button on the bottom or use the url to obtain directly the json.</em></p>
+<p>Next, the server will process the request of the user retrieving the result. In the example case of <cite>search_all_pdbs</cite>, the response is a json with all the codes PDB stored in GPCRmd.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The user can download this json using the “Download” button on the bottom or use the url to obtain directly the json.</p>
+</div>
 <a class="reference internal image-reference" href="_images/gpcrmd_apinoparamex.png"><img alt="GPCRmd functions without parameters response" src="_images/gpcrmd_apinoparamex.png" style="width: 600px;" /></a>
 <p>For the other side, the functions with the need of an input, like <cite>search_dyn</cite>, when it is click on “Try out” the web display the input parameters necessaries to retrieve the information from GPCRmd.</p>
 <a class="reference internal image-reference" href="_images/gpcrmd_apiparam.png"><img alt="GPCRmd functions with parameters" src="_images/gpcrmd_apiparam.png" style="width: 600px;" /></a>
-<p>Once the response is recived, the user can see the json with all the information requested. <em>Note: in case that the user use as input a list of elements separated by comma, the api will return a json with multiple elements.</em></p>
+<p>Once the response is recived, the user can see the json with all the information requested.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In case that the user use as input a list of elements separated by comma, the api will return a json with multiple elements.</p>
+</div>
 <a class="reference internal image-reference" href="_images/gpcrmd_apiparamex.png"><img alt="GPCRmd functions with parameters response" src="_images/gpcrmd_apiparamex.png" style="width: 600px;" /></a>
 <a class="reference internal image-reference" href="_images/gpcrmd_apiparamjson.png"><img alt="GPCRmd functions with parameters response" src="_images/gpcrmd_apiparamjson.png" style="width: 600px;" /></a>
 </section>
@@ -126,7 +134,11 @@
 <h2><a class="toc-backref" href="#id3" role="doc-backlink">Other GPCRmd API</a><a class="headerlink" href="#other-gpcrmd-api" title="Permalink to this heading"></a></h2>
 <p>This other part of the api is related with the files stored into GPCRmd. For security, to have a control of who’s is downloading the data from the web it is necessary to be log in with a GPCRmd account (see <a class="reference external" href="https://gpcrmd-docs.readthedocs.io/en/latest/accounts.html">GPCRmd account guide</a>).</p>
 <a class="reference internal image-reference" href="_images/gpcrmd_othapi.png"><img alt="GPCRmd other API" src="_images/gpcrmd_othapi.png" style="width: 600px;" /></a>
-<p>One of the functions is the downloader. The main function of this tool is to download all the files related to a dynamic, from topology to protocol files. <em>Note: now is under development for this reason is restricted to 2 dynamics ids for each request.</em></p>
+<p>One of the functions is the downloader. The main function of this tool is to download all the files related to a dynamic, from topology to protocol files.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Now is under development for this reason is restricted to 5 dynamics ids for each request.</p>
+</div>
 <a class="reference internal image-reference" href="_images/gpcrmd_othdown.png"><img alt="GPCRmd other API downloader" src="_images/gpcrmd_othdown.png" style="width: 600px;" /></a>
 <p>This process take some minutes because there are large files to collect, compressed and retrieve to the user. Let it run on the background.</p>
 <p>Once, the compressed file is created the user can see a button named “Download” to start the download of the file:</p>

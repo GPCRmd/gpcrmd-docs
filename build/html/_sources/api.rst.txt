@@ -33,7 +33,10 @@ For one side, the functions without the need to use a parameter as input, like `
   :width: 600
   :alt: GPCRmd functions without parameters
 
-Next, the server will process the request of the user retrieving the result. In the example case of `search_all_pdbs`, the response is a json with all the codes PDB stored in GPCRmd. *Note: the user can download this json using the "Download" button on the bottom or use the url to obtain directly the json.* 
+Next, the server will process the request of the user retrieving the result. In the example case of `search_all_pdbs`, the response is a json with all the codes PDB stored in GPCRmd. 
+
+.. note::
+  The user can download this json using the "Download" button on the bottom or use the url to obtain directly the json.
 
 .. image:: _static/gpcrmd_apinoparamex.png
   :width: 600
@@ -45,7 +48,10 @@ For the other side, the functions with the need of an input, like `search_dyn`, 
   :width: 600
   :alt: GPCRmd functions with parameters
 
-Once the response is recived, the user can see the json with all the information requested. *Note: in case that the user use as input a list of elements separated by comma, the api will return a json with multiple elements.*
+Once the response is recived, the user can see the json with all the information requested. 
+
+.. note::
+  In case that the user use as input a list of elements separated by comma, the api will return a json with multiple elements.
 
 .. image:: _static/gpcrmd_apiparamex.png
   :width: 600
@@ -64,7 +70,10 @@ This other part of the api is related with the files stored into GPCRmd. For sec
   :width: 600
   :alt: GPCRmd other API
 
-One of the functions is the downloader. The main function of this tool is to download all the files related to a dynamic, from topology to protocol files. *Note: now is under development for this reason is restricted to 2 dynamics ids for each request.* 
+One of the functions is the downloader. The main function of this tool is to download all the files related to a dynamic, from topology to protocol files. 
+
+.. warning::
+  Now is under development for this reason is restricted to 5 dynamics ids for each request. 
 
 .. image:: _static/gpcrmd_othdown.png
   :width: 600

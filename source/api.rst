@@ -73,7 +73,7 @@ This other part of the api is related with the files stored into GPCRmd. For sec
 One of the functions is the downloader. The main function of this tool is to download all the files related to a dynamic, from topology to protocol files. 
 
 .. warning::
-  Now is under development for this reason is restricted to 5 dynamics ids for each request. 
+  Now, is under development for this reason is restricted to 5 dynamics ids for each request. 
 
 .. image:: _static/gpcrmd_othdown.png
   :width: 600

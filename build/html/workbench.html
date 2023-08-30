@@ -110,8 +110,25 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="#simulation-workbench" id="id3">Simulation workbench</a></p>
 <ul>
-<li><p><a class="reference internal" href="#viewer" id="id4">Viewer</a></p></li>
-<li><p><a class="reference internal" href="#toolkit" id="id5">Toolkit</a></p></li>
+<li><p><a class="reference internal" href="#viewer" id="id4">Viewer</a></p>
+<ul>
+<li><p><a class="reference internal" href="#general-features" id="id5">General features:</a></p></li>
+<li><p><a class="reference internal" href="#selection-tools" id="id6">Selection tools:</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#toolkit" id="id7">Toolkit</a></p>
+<ul>
+<li><p><a class="reference internal" href="#interaction-network-flare-plots" id="id8">Interaction network (Flare plots):</a></p></li>
+<li><p><a class="reference internal" href="#interaction-frequencies" id="id9">Interaction frequencies:</a></p></li>
+<li><p><a class="reference internal" href="#distance" id="id10">Distance:</a></p></li>
+<li><p><a class="reference internal" href="#rmsd" id="id11">RMSD:</a></p></li>
+<li><p><a class="reference internal" href="#water-volume-distribution" id="id12">Water volume distribution:</a></p></li>
+<li><p><a class="reference internal" href="#dynamic-pharmacophores" id="id13">Dynamic pharmacophores:</a></p></li>
+<li><p><a class="reference internal" href="#tunnels-and-channels" id="id14">Tunnels and channels:</a></p></li>
+<li><p><a class="reference internal" href="#pockets" id="id15">Pockets:</a></p></li>
+<li><p><a class="reference internal" href="#genetics-variants" id="id16">Genetics variants:</a></p></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -122,7 +139,7 @@
 <p>This part of the workbench is totally related to the visualization of the proteins using the program <a class="reference external" href="http://nglviewer.org/mdsrv/">MDsrv</a> that internally uses <a class="reference external" href="http://nglviewer.org/ngl/api/index.html">NGL Viewer</a>.</p>
 <a class="reference internal image-reference" href="_images/tools_viewer.png"><img alt="GPCRmd viewer" src="_images/tools_viewer.png" style="width: 600px;" /></a>
 <section id="general-features">
-<h3>General features:<a class="headerlink" href="#general-features" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">General features:</a><a class="headerlink" href="#general-features" title="Permalink to this heading"></a></h3>
 <section id="mouse-controls">
 <h4>Mouse controls:<a class="headerlink" href="#mouse-controls" title="Permalink to this heading"></a></h4>
 <p>The basic controls with the mouse are:</p>
@@ -170,7 +187,7 @@
 </section>
 <section id="trajectory-player">
 <h5>Trajectory player:<a class="headerlink" href="#trajectory-player" title="Permalink to this heading"></a></h5>
-<p>This bar is controls the display of the trajectory along the simulation. The user can run, pause or select an specific frame writing it on the small cell. Also, at the end of the bar it is display the trajectory id and the time in nanoseconds.</p>
+<p>This bar controls the display of the trajectory along the simulation. The user can run, pause or select an specific frame writing it on the small cell. Also, at the end of the bar it is display the trajectory id and the time in nanoseconds.</p>
 <a class="reference internal image-reference" href="_images/tools_viewer_tplay.png"><img alt="GPCRmd viewer trajectory player" src="_images/tools_viewer_tplay.png" style="width: 600px;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -194,7 +211,7 @@
 </section>
 </section>
 <section id="selection-tools">
-<h3>Selection tools:<a class="headerlink" href="#selection-tools" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Selection tools:</a><a class="headerlink" href="#selection-tools" title="Permalink to this heading"></a></h3>
 <section id="structure-selection">
 <h4>Structure selection:<a class="headerlink" href="#structure-selection" title="Permalink to this heading"></a></h4>
 <p>The user can choose one of the selections we propose or define a new one (Customized selection option) using the <a class="reference external" href="http://nglviewer.org/ngl/api/manual/usage/selection-language.html">NGL selection language</a>.</p>
@@ -239,14 +256,14 @@
 </section>
 </section>
 <section id="toolkit">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Toolkit</a><a class="headerlink" href="#toolkit" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Toolkit</a><a class="headerlink" href="#toolkit" title="Permalink to this heading"></a></h2>
 <p>In the landing page of GPCRmd the user can found a selection of tools that are part of the simulation workbench.</p>
 <a class="reference internal image-reference" href="_images/tools_selection.png"><img alt="GPCRmd tool selection" src="_images/tools_selection.png" style="width: 600px;" /></a>
 <p>Once, the user selects a tool the web display a table like the search tool but in this case the view will display the tool selected.</p>
 <a class="reference internal image-reference" href="_images/tools_selected.png"><img alt="GPCRmd tool selected" src="_images/tools_selected.png" style="width: 600px;" /></a>
 <a class="reference internal image-reference" href="_images/tools_toolkit.png"><img alt="GPCRmd toolkit" src="_images/tools_toolkit.png" style="width: 600px;" /></a>
 <section id="interaction-network-flare-plots">
-<h3>Interaction network (Flare plots):<a class="headerlink" href="#interaction-network-flare-plots" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Interaction network (Flare plots):</a><a class="headerlink" href="#interaction-network-flare-plots" title="Permalink to this heading"></a></h3>
 <p>Flare Plots are a tool for the study and representation of intra-protein interactions developed at Stanford University by Dr. Fonseca and Dr. Venkatakishnan. This approach makes it possible to obtain a highly visual depiction of complex data, such as the set of interactions formed between protein residues throughout MD simulations, in the form of circular interactive networks named Flare plots. Residue-residue interactions are represented as lines connecting residue pairs. Hover or click a residue to highlight the lines representing the interactions in which it participates.</p>
 <p>There are several options available:</p>
 <ul>
@@ -349,7 +366,7 @@
 <a class="reference internal image-reference" href="_images/tools_network.png"><img alt="GPCRmd toolkit network" src="_images/tools_network.png" style="width: 600px;" /></a>
 </section>
 <section id="interaction-frequencies">
-<h3>Interaction frequencies:<a class="headerlink" href="#interaction-frequencies" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Interaction frequencies:</a><a class="headerlink" href="#interaction-frequencies" title="Permalink to this heading"></a></h3>
 <section id="hydrogen-bonds">
 <h4>Hydrogen bonds:<a class="headerlink" href="#hydrogen-bonds" title="Permalink to this heading"></a></h4>
 <p>This tool identifies Hydrogen Bonds formed in a simulation, splitting the results between protein-protein hydrogen bonds and protein-not protein bonds. We use the MDTraj module function <a class="reference external" href="http://mdtraj.org/1.8.0/api/generated/mdtraj.wernet_nilsson.html">wernet_nilson</a>, which establishes a threshold distance of 3.3 Angstroms between the donor and acceptor atoms; this threshold becomes progressively stricter as the angle formed by H-D-A increases (a perfect straight bond is 0 degrees, as the donor atom is central). It’s possible to choose between a few options:</p>
@@ -374,7 +391,7 @@
 </section>
 </section>
 <section id="distance">
-<h3>Distance:<a class="headerlink" href="#distance" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Distance:</a><a class="headerlink" href="#distance" title="Permalink to this heading"></a></h3>
 <p>This tool is used to calculate the distance between atom pairs across the different frames of a trajectory, and therefore across time. To calculate a distance, you need to indicate the pair or pairs of atoms you are interested in. This can be done in different ways:</p>
 <ul class="simple">
 <li><p>Select a pair of atoms at the viewer screen by clicking on them and, afterward, <strong>importing the created distances</strong> with the blue arrow button.</p></li>
@@ -386,21 +403,21 @@ Finally, just click at <strong>Compute</strong>. Only atom pairs that are marked
 <a class="reference internal image-reference" href="_images/tools_distance.png"><img alt="GPCRmd toolkit distance" src="_images/tools_distance.png" style="width: 600px;" /></a>
 </section>
 <section id="rmsd">
-<h3>RMSD:<a class="headerlink" href="#rmsd" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">RMSD:</a><a class="headerlink" href="#rmsd" title="Permalink to this heading"></a></h3>
 <p>This tool computes the RMSD of all the conformations in a target trajectory to a reference conformation. It is necessary to indicate the trajectory to be used and the frames to be considered. Also, a reference frame of a given trajectory. It is possible to chose which atoms are going to be considered in the calculation: only alpha carbons, non-hydrogen protein atoms, protein C-alpha, etc. As in the case of distance analysis, the result will be shown in a plot (RMSD by time or by frame). It is possible to download the plot as an image or all the obtained data as a CSV file.</p>
 <a class="reference internal image-reference" href="_images/tools_rmsd.png"><img alt="GPCRmd toolkit rmsd" src="_images/tools_rmsd.png" style="width: 600px;" /></a>
 </section>
 <section id="water-volume-distribution">
-<h3>Water volume distribution:<a class="headerlink" href="#water-volume-distribution" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Water volume distribution:</a><a class="headerlink" href="#water-volume-distribution" title="Permalink to this heading"></a></h3>
 <p>Displays an averaged water density map of the MD trajectory under study. Maps are precomputed <a class="reference external" href="https://www.ks.uiuc.edu/Research/vmd/vmd-1.9.1/ug/node153.html">VMD VolMap Tool</a>. They are generated only for oxygen atoms of a water molecule in a cutoff distance of 10 Å to the protein using a resolution of 1 Å. Atoms are treated as spheres using the atomic radii.</p>
 <a class="reference internal image-reference" href="_images/tools_water.png"><img alt="GPCRmd toolkit water density map" src="_images/tools_water.png" style="width: 600px;" /></a>
 </section>
 <section id="dynamic-pharmacophores">
-<h3>Dynamic pharmacophores:<a class="headerlink" href="#dynamic-pharmacophores" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Dynamic pharmacophores:</a><a class="headerlink" href="#dynamic-pharmacophores" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/tools_pharma.png"><img alt="GPCRmd toolkit pharmacophores" src="_images/tools_pharma.png" style="width: 600px;" /></a>
 </section>
 <section id="tunnels-and-channels">
-<h3>Tunnels and channels:<a class="headerlink" href="#tunnels-and-channels" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Tunnels and channels:</a><a class="headerlink" href="#tunnels-and-channels" title="Permalink to this heading"></a></h3>
 <p>Displays the tunnels and channels formed in the receptor during the simulation. Tunnels are defined as void pathways leading from a cavity buried in a protein core to the surrounding solvent, while in channels both endings are opened to the surrounding solvent.</p>
 <p>Tunnels/channels are precalculated using the software <a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002708">Caver 3.0</a>. The starting point coordinates for apo forms and receptor-ligand structures are set to the center of mass of ligand-interacting residues in the respective PDB structure. The following input parameters are used: probe_radius=1.4, shell_radius=3, shell_depth=4. Note that we focus our analysis on the ligand-binding pocket, so tunnels/channels unrelated to the ligand-binding pocket may not be detected.</p>
 <p>All the tunnels/channels identified in the simulation are clustered by similarity. Such clusters of identified tunnels can be displayed by selecting them in the “Clusters” column.</p>
@@ -408,11 +425,11 @@ Finally, just click at <strong>Compute</strong>. Only atom pairs that are marked
 <a class="reference internal image-reference" href="_images/tools_tunnel.png"><img alt="GPCRmd toolkit distance" src="_images/tools_tunnel.png" style="width: 600px;" /></a>
 </section>
 <section id="pockets">
-<h3>Pockets:<a class="headerlink" href="#pockets" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">Pockets:</a><a class="headerlink" href="#pockets" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/tools_pockets.png"><img alt="GPCRmd toolkit pockets" src="_images/tools_pockets.png" style="width: 600px;" /></a>
 </section>
 <section id="genetics-variants">
-<h3>Genetics variants:<a class="headerlink" href="#genetics-variants" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Genetics variants:</a><a class="headerlink" href="#genetics-variants" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/tools_gene.png"><img alt="GPCRmd toolkit gene variants" src="_images/tools_gene.png" style="width: 600px;" /></a>
 </section>
 </section>

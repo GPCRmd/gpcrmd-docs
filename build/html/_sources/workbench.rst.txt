@@ -5,7 +5,7 @@ Simulation workbench
 The GPCRmd simulation workbench includes a set of online tools for the interactive visualization (*Viewer*) and analysis (*Toolkit*) of individual simulations. 
 
 .. contents::
-    :depth: 2
+    :depth: 3
 
 .. image:: _static/tools_workbench.png
   :width: 600
@@ -75,7 +75,7 @@ On click mode:
 Trajectory player:
 ******************
 
-This bar is controls the display of the trajectory along the simulation. The user can run, pause or select an specific frame writing it on the small cell. Also, at the end of the bar it is display the trajectory id and the time in nanoseconds.
+This bar controls the display of the trajectory along the simulation. The user can run, pause or select an specific frame writing it on the small cell. Also, at the end of the bar it is display the trajectory id and the time in nanoseconds.
 
 .. image:: _static/tools_viewer_tplay.png
   :width: 600

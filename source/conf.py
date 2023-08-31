@@ -9,7 +9,8 @@
 project = 'gpcrmd-docs'
 copyright = '2023, GPCRmd, GPCR drug discovery group'
 author = 'GPCRmd'
-release = '2.0.0 Fenix version'
+version = '2.0'
+release = '2.0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

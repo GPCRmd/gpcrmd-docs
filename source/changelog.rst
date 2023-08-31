@@ -34,3 +34,22 @@ Changelog
 
 * Trj trajectory file format removed due to conflicts. 
 
+2.0.1 (31-08-2023)
+******************
+
+**Added**   
+
+* Publication page link in the reference section of the simulation report (e.g. https://gpcrmd.org/dynadb/dynamics/id/90/). 
+* API can accept multiple inputs.
+* Documentation menu button with detailed information for the users related with GPCRmd.
+  
+**Changed**  
+
+* GPCRmd workbench documentation updated. 
+* Organization of the top bar menu.
+
+**Fixed**  
+
+* Pockets tool bug not showing data in the table if the user access from the selection tool.
+* Description empties on the submission forms cause an error before the step 5 in the submission summary.
+* Minor bugs. 

@@ -376,13 +376,14 @@ This tool displays the pockets formed in the receptor during the simulation. The
 Pockets are detected using **MDpocket** software, which is part of the fpocket suite (https://github.com/Discngine/fpocket) as an extension to analyse conformational ensembles of proteins. In essence, MDpocket divides the simulation in several snapshots (one every nanosecond in our case). Then, it computes a Voronoi tessellation to every snapshot. The resulting spheres are mapped on a 1 Å spaced grid and a density map is generated over all the snapshots. Pockets are then clustered using the DBSCAN algorithm. Once the pockets are detected, MDpocket is run a second time to obtain the different descriptors for each of the pockets, such as the volume, the polarity, or the hydrophobicity density. The following input parameters are used to obtain the displayed results: isovalue=3, epsilon(DBSCAN)=1.5, minPoints(DBSCAN)=8.
 
 In the tool, you will see the different pockets found for the displayed trajectory. You have several controllers:
+
 * **Pocket table**: it includes a list of all the pockets found in the receptor and their different descriptors. You can click on the different rows to select one or multiple pockets.
 * **"Plot and view selected pockets" button**: it displays the selected pockets on the viewer and also generates a plot of the pocket volume over the course of the simulation.
 * **"Reset" button**: resets every configuration, the viewer and the plot to the default initial state.
 * **"Show nearby residues?" checkbox**: if checked, it displays the surface area of the protein atoms that are nearby (3 Å) of the pocket.
 * **"Smoothing window size" selector**: it is a value used to smooth the pocket volume plot, as there can be a lot of spikes in volume and can be difficult to visualize the trend. Default value is 10.
 * **Download button**: when clicked, it will start a download of a zip containing the displayed trajectory's pockets.
-* **Volume over time plot**: it is displayed after selecting one or more pockets on the table and clicking on "Plot and view selected pockets" button. It will display a plot of the selected pocket's volume over the simulation time
+* **Volume over time plot**: it is displayed after selecting one or more pockets on the table and clicking on "Plot and view selected pockets" button. It will display a plot of the selected pocket's volume over the simulation time.
   
 .. image:: _static/tools_pockets.png
   :width: 600

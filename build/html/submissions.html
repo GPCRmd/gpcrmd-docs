@@ -67,7 +67,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#step-4-simulation-files">Step 4: Simulation files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#step-5-simulation-files">Step 5: Simulation files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-5-references">Step 5: References</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#submission-summary">Submission summary</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#submission-list">Submission list</a></li>
 </ul>
@@ -116,7 +116,7 @@
 <li><p><a class="reference internal" href="#step-2-small-molecules" id="id5">Step 2: Small Molecules</a></p></li>
 <li><p><a class="reference internal" href="#step-3-protein-chains" id="id6">Step 3: Protein chains</a></p></li>
 <li><p><a class="reference internal" href="#step-4-simulation-files" id="id7">Step 4: Simulation files</a></p></li>
-<li><p><a class="reference internal" href="#step-5-simulation-files" id="id8">Step 5: Simulation files</a></p></li>
+<li><p><a class="reference internal" href="#step-5-references" id="id8">Step 5: References</a></p></li>
 <li><p><a class="reference internal" href="#submission-summary" id="id9">Submission summary</a></p></li>
 <li><p><a class="reference internal" href="#submission-list" id="id10">Submission list</a></p></li>
 </ul>
@@ -213,20 +213,20 @@
 <p>The parameters of each entry are:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><strong>Name</strong>:</p></li>
-<li><p><strong>Residue name</strong>:</p></li>
-<li><p><strong>IUPAC name</strong>:</p></li>
-<li><p><strong>ChemblId</strong>:</p></li>
-<li><p><strong>PubchemCID</strong>:</p></li>
-<li><p><strong>InChl</strong>:</p></li>
-<li><p><strong>Standard InCh</strong>:</p></li>
-<li><p><strong>InChlKey</strong>:</p></li>
-<li><p><strong>Standard InChlKey</strong>:</p></li>
-<li><p><strong>Open SMILES</strong>:</p></li>
-<li><p><strong>Net charge</strong>:</p></li>
-<li><p><strong>Other names</strong>:</p></li>
-<li><p><strong>Description</strong>:</p></li>
-<li><p><strong>Molecule SDF file</strong>:</p></li>
+<li><p><strong>Name</strong>: Main name of the small molecule.</p></li>
+<li><p><strong>Residue name</strong>: Residue name.</p></li>
+<li><p><strong>IUPAC name</strong>: Name by the International Union of Pure and Applied Chemistry (IUPAC) as a standard method of naming organic chemical compounds.</p></li>
+<li><p><strong>ChemblId</strong>: identifier from the chemical database of bioactive molecules with drug-like properties.</p></li>
+<li><p><strong>PubchemCID</strong>: identifier from database of chemical molecules and their activities in biological assays Pubmed.</p></li>
+<li><p><strong>InChl</strong>: International Chemical Identifier (InChI) is a identifier for chemical substances, designed to provide a standard way to encode molecular information and to facilitate the search for such information in databases and on the web.</p></li>
+<li><p><strong>Standard InCh</strong>: InChi of the standard form of this molecule (should be the same as InChi, except if the submited molecule is an isomer).</p></li>
+<li><p><strong>InChlKey</strong>: is a fixed-length format directly derived from InChI. It is based on a strong hash (SHA-256 algorithm) of an InChI string.</p></li>
+<li><p><strong>Standard InChlKey</strong>:InChiKey of the standard form of this molecule (should be the same as InChiKey, except if the submited molecule is an isomer).</p></li>
+<li><p><strong>Open SMILES</strong>: identifier for the OpenSMILES database that is designed to facilitate exchange of chemical information.</p></li>
+<li><p><strong>Net charge</strong>: the total after taking account both positive and negative charges</p></li>
+<li><p><strong>Other names</strong>: Alias names.</p></li>
+<li><p><strong>Description</strong>: Detailed extra text about the molecule.</p></li>
+<li><p><strong>Molecule SDF file</strong>: SDF format file with the molecular image of the molecule as visual representation.</p></li>
 </ul>
 </div></blockquote>
 <a class="reference internal image-reference" href="_images/gpcrmd_step2manual.png"><img alt="Submission form step 2 auto manual" src="_images/gpcrmd_step2manual.png" style="width: 600px;" /></a>
@@ -253,8 +253,8 @@
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>UniProtKbac</strong>: Uniprot id of this protein.</p></li>
-<li><p><strong>Name</strong>:</p></li>
-<li><p><strong>Other names</strong>:</p></li>
+<li><p><strong>Name</strong>: Main name of the protein segment.</p></li>
+<li><p><strong>Other names</strong>: Alias or other names.</p></li>
 <li><p><strong>UniProt organism id</strong>: Uniprot taxon node of the specie this protein belongs to.</p></li>
 <li><p><strong>Sequence</strong>: sequence assigned to the UniprotKb.</p></li>
 <li><p><strong>Not a GPCR</strong>: check in case that the entry protein is not a GPCR.</p></li>
@@ -313,8 +313,8 @@
 <a class="reference internal image-reference" href="_images/gpcrmd_step4files.png"><img alt="Submission form step 4 files" src="_images/gpcrmd_step4files.png" style="width: 600px;" /></a>
 <p>When the user finished to upload the files it can be submitted. This step needs some extra time depending on the size of files uploaded into GPCRmd.</p>
 </section>
-<section id="step-5-simulation-files">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Step 5: Simulation files</a><a class="headerlink" href="#step-5-simulation-files" title="Permalink to this heading"></a></h2>
+<section id="step-5-references">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Step 5: References</a><a class="headerlink" href="#step-5-references" title="Permalink to this heading"></a></h2>
 <p>As some of the previous steps, the user can add the information automatically, using the retrieve option with a doi, or write it manually.</p>
 <blockquote>
 <div><ul class="simple">

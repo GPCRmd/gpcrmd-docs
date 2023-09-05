@@ -121,20 +121,20 @@ If not you can add the information with two ways:
 
 The parameters of each entry are: 
 
-  * **Name**: 
-  * **Residue name**:
-  * **IUPAC name**:
-  * **ChemblId**:
-  * **PubchemCID**:
-  * **InChl**:
-  * **Standard InCh**:
-  * **InChlKey**:
-  * **Standard InChlKey**:
-  * **Open SMILES**:
-  * **Net charge**:
-  * **Other names**:
-  * **Description**: 
-  * **Molecule SDF file**:
+  * **Name**: Main name of the small molecule.
+  * **Residue name**: Residue name. 
+  * **IUPAC name**: Name by the International Union of Pure and Applied Chemistry (IUPAC) as a standard method of naming organic chemical compounds.  
+  * **ChemblId**: identifier from the chemical database of bioactive molecules with drug-like properties.
+  * **PubchemCID**: identifier from database of chemical molecules and their activities in biological assays Pubmed. 
+  * **InChl**: International Chemical Identifier (InChI) is a identifier for chemical substances, designed to provide a standard way to encode molecular information and to facilitate the search for such information in databases and on the web.
+  * **Standard InCh**: InChi of the standard form of this molecule (should be the same as InChi, except if the submited molecule is an isomer).
+  * **InChlKey**: is a fixed-length format directly derived from InChI. It is based on a strong hash (SHA-256 algorithm) of an InChI string.
+  * **Standard InChlKey**:InChiKey of the standard form of this molecule (should be the same as InChiKey, except if the submited molecule is an isomer).
+  * **Open SMILES**: identifier for the OpenSMILES database that is designed to facilitate exchange of chemical information.
+  * **Net charge**: the total after taking account both positive and negative charges
+  * **Other names**: Alias names.
+  * **Description**: Detailed extra text about the molecule.
+  * **Molecule SDF file**: SDF format file with the molecular image of the molecule as visual representation.
 
 .. image:: _static/gpcrmd_step2manual.png
   :width: 600
@@ -174,8 +174,8 @@ Like the step 2, you can add the information with two ways:
 The parameters of each entry are: 
 
   * **UniProtKbac**: Uniprot id of this protein.
-  * **Name**: 
-  * **Other names**:
+  * **Name**: Main name of the protein segment.
+  * **Other names**: Alias or other names. 
   * **UniProt organism id**: Uniprot taxon node of the specie this protein belongs to.
   * **Sequence**: sequence assigned to the UniprotKb.
   * **Not a GPCR**: check in case that the entry protein is not a GPCR.
@@ -249,8 +249,8 @@ The next step is to upload the files that in the pre-submission step was require
 
 When the user finished to upload the files it can be submitted. This step needs some extra time depending on the size of files uploaded into GPCRmd.
 
-Step 5: Simulation files
-========================
+Step 5: References
+==================
 
 As some of the previous steps, the user can add the information automatically, using the retrieve option with a doi, or write it manually.
 

@@ -124,9 +124,9 @@ Once, the user introduce the email and click on "Send" a confirm message will sh
 
 Automatically, the user will recieve an email from **info@gpcrmd.org** with the link to reset the password. 
 
-.. image:: _static/gpcrmd_accresetemail.png
-  :width: 600
-  :alt: GPCRmd reset email
+.. .. image:: _static/gpcrmd_accresetemail.png
+..   :width: 600
+..   :alt: GPCRmd reset email
 
 Using the link attached to this email the user can acces into the reset password form in GPCRmd:
 
@@ -140,4 +140,4 @@ When, it is write the new password and click on "Change my password", if all the
   :width: 600
   :alt: GPCRmd reset confirm
 
-From then, the user can login with the new password (:link:`accounts/login/`). 
+From then, the user can login with the new password (`here <https://www.gpcrmd.org/accounts/login>`_). 

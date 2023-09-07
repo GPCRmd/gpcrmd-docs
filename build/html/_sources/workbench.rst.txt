@@ -165,11 +165,6 @@ It is also possible to visualize the positions that correspond to conserved posi
   :width: 600
   :alt: GPCRmd viewer quick selection
 
-.. _MDsrv: http://nglviewer.org/mdsrv/
-.. _gnomAD database: https://gnomad.broadinstitute.org/
-.. _GPCRdb: https://www.gpcrdb.org/
-.. _NGL selection language: http://nglviewer.org/ngl/api/manual/usage/selection-language.html
-
 Experimental density map:
 --------------------------
 
@@ -362,12 +357,6 @@ It is also possible to display the tunnel with the highest throughput of each cl
   :width: 600
   :alt: GPCRmd toolkit distance 
 
-.. _wernet_nilson: http://mdtraj.org/1.8.0/api/generated/mdtraj.wernet_nilsson.html
-.. _GetContacts: https://getcontacts.github.io/interactions.html
-.. _VMD VolMap Tool: https://www.ks.uiuc.edu/Research/vmd/vmd-1.9.1/ug/node153.html
-.. _Caver 3.0: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002708
-.. _As defined by Caver: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002708
-
 Pockets: 
 ========
 
@@ -392,6 +381,50 @@ In the tool, you will see the different pockets found for the displayed trajecto
 Genetics variants: 
 ==================
 
+With this tool you can visualize the genetic variants affecting each receptor mapped in the structure. In addition, you can also check several characteristics of each of the variants:
+
+* General information: position in the sequence and generic residue position affected, original and mutated amino acids, variant ID, allele frequency, count and number.
+* Disease relation: know if the variant has been related with diseases in previous studies. You can check how many diseases are related and the top related disease (the one with the highest VDA score, which is a measure of the number of references the association has).
+* Predicted impact on protein functionality: two predicting scores are available `SIFT <https://sift.bii.a-star.edu.sg/>`_ and `Polyphen2 <http://genetics.bwh.harvard.edu/pph2/>`_, in addition to the "Unified Impact Prediction" score which mixes both SIFT and PolyPhen2 results.
+* If it is affecting a known functional site or post-translational modification position
+* Mutation type
+
+All this information has been gathered using different databases: `GPCRdb`_, `PDB <https://www.rcsb.org/>`_, `gnomeAD <https://gnomad.broadinstitute.org/>`_, `Disgenet <https://www.disgenet.org/>`_ , `VEP <https://www.ensembl.org/vep>`_ and `Uniprot <https://www.uniprot.org/>`_.
+
+The tool has, first, some displaying options (coloring and filtering selectors) to be applied to the variants on the visualizer panel on the left, followed by a table. The table shows the characteristics of the variants that are displayed on the visualizer, thus, whenever you apply a filter in the visualization, the table will be also filtered. Below the table you can see all the available characteristics that can be added to the table as columns. 
+
+Firstly, to show the variants in the visualizer click the "On" of "Display". The variants will be instantly shown in the structure as balls. By default, they are colored by "Disease association": in white (variants not known to be related with any disease) and red (variants that are known to be related with at least one disease). However, using the "Color by" dropdown menu, the coloring can be changed to different characteristics of the variants:
+
+* Unified Impact Prediction: 
+  * Damaging: predicted to be damaging by both SIFT and PolyPhen2.
+  * Benign: predicted to be bening by both SIFT and PolyPhen2.
+* Functional site:
+  * Binding site
+  * Intracellular binding site
+  * Conserved Motif: ionic lock
+* Post-translational modification: show in variants that affect positions with `post-translational modifications <https://www.uniprot.org/help/post-translational_modification>`_.
+* SIFT score: from 0 - 1, scores nearer to zero are more likely to be deleterious.
+* Polyphen score: from 0 - 1, scores nearer to one are more likely to be deleterious.
+* Mutation type:
+  * Similar/changed: if the amino acid substitution suppose a change in the charge, hydrophobicity, aromaticity or polarity.
+
+With the checkbox "Show every atom" the variants will be displayed in licorice and, with the next checkbox below it, "Top disease lavel", the variants that are known to be related with diseases (colored in red if "Color by: Disease association" is selected) will be tagged with the name of the related disease with highest score.
+
+Then, we can see the button "Show only disease-associated variants", by clicking on it only these variants will be displayed in the structure and in the table below. Right below it, other filtering options are available. 
+
+You can mix the coloring options with the filters to get useful information. For example, you can apply filters to show only the variants that are predicted to be damaging and affecting the binding site and, then, color them by disease association to check the damaging variants of the region that have been studied and related to diseases.
+
 .. image:: _static/tools_gene.png
   :width: 600
   :alt: GPCRmd toolkit gene variants 
+
+.. .. .. LINKS
+.. _MDsrv: http://nglviewer.org/mdsrv/
+.. _gnomAD database: https://gnomad.broadinstitute.org/
+.. _GPCRdb: https://www.gpcrdb.org/
+.. _NGL selection language: http://nglviewer.org/ngl/api/manual/usage/selection-language.html
+.. _wernet_nilson: http://mdtraj.org/1.8.0/api/generated/mdtraj.wernet_nilsson.html
+.. _GetContacts: https://getcontacts.github.io/interactions.html
+.. _VMD VolMap Tool: https://www.ks.uiuc.edu/Research/vmd/vmd-1.9.1/ug/node153.html
+.. _Caver 3.0: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002708
+.. _As defined by Caver: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002708

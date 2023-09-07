@@ -137,7 +137,7 @@ Using the link attached to this email the user can acces into the reset password
 When, it is write the new password and click on "Change my password", if all the process runs correclty, the user will obtain a message confirming the reset of the password for the new one:
 
 .. image:: _static/gpcrmd_accresetcomp.png
-  :width: 600
+  :width: 300
   :alt: GPCRmd reset confirm
 
 From then, the user can login with the new password (`here <https://www.gpcrmd.org/accounts/login>`_). 

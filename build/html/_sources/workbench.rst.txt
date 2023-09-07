@@ -383,11 +383,11 @@ Genetics variants:
 
 With this tool you can visualize the genetic variants affecting each receptor mapped in the structure. In addition, you can also check several characteristics of each of the variants:
 
-* General information: position in the sequence and generic residue position affected, original and mutated amino acids, variant ID, allele frequency, count and number.
-* Disease relation: know if the variant has been related with diseases in previous studies. You can check how many diseases are related and the top related disease (the one with the highest VDA score, which is a measure of the number of references the association has).
-* Predicted impact on protein functionality: two predicting scores are available `SIFT <https://sift.bii.a-star.edu.sg/>`_ and `Polyphen2 <http://genetics.bwh.harvard.edu/pph2/>`_, in addition to the "Unified Impact Prediction" score which mixes both SIFT and PolyPhen2 results.
-* If it is affecting a known functional site or post-translational modification position
-* Mutation type
+* **General information**: position in the sequence and generic residue position affected, original and mutated amino acids, variant ID, allele frequency, count and number.
+* **Disease relation**: know if the variant has been related with diseases in previous studies. You can check how many diseases are related and the top related disease (the one with the highest VDA score, which is a measure of the number of references the association has).
+* **Predicted impact on protein functionality**: two predicting scores are available `SIFT <https://sift.bii.a-star.edu.sg/>`_ and `Polyphen2 <http://genetics.bwh.harvard.edu/pph2/>`_, in addition to the "Unified Impact Prediction" score which mixes both SIFT and PolyPhen2 results.
+* If it is affecting a known functional site or post-translational modification position.
+* **Mutation type**.
 
 All this information has been gathered using different databases: `GPCRdb`_, `PDB <https://www.rcsb.org/>`_, `gnomeAD <https://gnomad.broadinstitute.org/>`_, `Disgenet <https://www.disgenet.org/>`_ , `VEP <https://www.ensembl.org/vep>`_ and `Uniprot <https://www.uniprot.org/>`_.
 
@@ -395,18 +395,18 @@ The tool has, first, some displaying options (coloring and filtering selectors) 
 
 Firstly, to show the variants in the visualizer click the "On" of "Display". The variants will be instantly shown in the structure as balls. By default, they are colored by "Disease association": in white (variants not known to be related with any disease) and red (variants that are known to be related with at least one disease). However, using the "Color by" dropdown menu, the coloring can be changed to different characteristics of the variants:
 
-* Unified Impact Prediction: 
-  * Damaging: predicted to be damaging by both SIFT and PolyPhen2.
-  * Benign: predicted to be bening by both SIFT and PolyPhen2.
-* Functional site:
-  * Binding site
-  * Intracellular binding site
-  * Conserved Motif: ionic lock
-* Post-translational modification: show in variants that affect positions with `post-translational modifications <https://www.uniprot.org/help/post-translational_modification>`_.
-* SIFT score: from 0 - 1, scores nearer to zero are more likely to be deleterious.
-* Polyphen score: from 0 - 1, scores nearer to one are more likely to be deleterious.
-* Mutation type:
-  * Similar/changed: if the amino acid substitution suppose a change in the charge, hydrophobicity, aromaticity or polarity.
+* **Unified Impact Prediction**:   
+    * Damaging: predicted to be damaging by both SIFT and PolyPhen2.
+    * Benign: predicted to be bening by both SIFT and PolyPhen2.
+* **Functional site**:
+    * Binding site.
+    * Intracellular binding site.
+    * Conserved Motif: ionic lock.
+* **Post-translational modification**: show in variants that affect positions with `post-translational modifications <https://www.uniprot.org/help/post-translational_modification>`_.
+* **SIFT score**: from 0 - 1, scores nearer to zero are more likely to be deleterious.
+* **Polyphen score**: from 0 - 1, scores nearer to one are more likely to be deleterious.
+* **Mutation type**:
+    * Similar/changed: if the amino acid substitution suppose a change in the charge, hydrophobicity, aromaticity or polarity.
 
 With the checkbox "Show every atom" the variants will be displayed in licorice and, with the next checkbox below it, "Top disease lavel", the variants that are known to be related with diseases (colored in red if "Color by: Disease association" is selected) will be tagged with the name of the related disease with highest score.
 

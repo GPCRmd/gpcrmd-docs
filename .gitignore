@@ -57,3 +57,5 @@ Makefile
 make.bat
 .vscode
 _templates
+
+_build/

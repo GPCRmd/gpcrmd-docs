@@ -4,6 +4,26 @@ Changelog
 .. toctree::
     :maxdepth: 1
 
+2.0.2 (27-10-2023)
+******************
+
+**Added**   
+
+* New topology file format accepted: .cms. 
+* New batch of published simulations from January 2023 to October 2023. 
+* New graph on the statistics homepage section about the accumulated time of simulation in GPCRmd, grouped by GPCRmd community or individual contributions. 
+* New two functions on GPCRmd API to get all the dynamics id by class or by ligand type (Apoform / Complex). 
+* New filtering mode by field using text and download modes to get the data filtered on the search tool.
+
+**Changed**  
+
+* Limited the delta values from 0 to 20 nanoseconds in the step 1 of the submission form due to confusions on the units. 
+* New style of graphs on the statistics section at the homepage. 
+
+**Fixed**  
+
+* Error access to the summary of a submission using the button "See summary" in the submission list. 
+
 2.0.1 (31-08-2023)
 ******************
 

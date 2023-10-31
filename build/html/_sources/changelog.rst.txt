@@ -4,7 +4,7 @@ Changelog
 .. toctree::
     :maxdepth: 1
 
-2.0.2 (27-10-2023)
+2.0.2 (27-10-2023, postponed to 03-11-2023)
 ******************
 
 **Added**   

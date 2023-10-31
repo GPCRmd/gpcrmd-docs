@@ -23,6 +23,8 @@ Changelog
 **Fixed**  
 
 * Error access to the summary of a submission using the button "See summary" in the submission list. 
+* Bug on meta-analysis tool NGL viewers that not showing the structure correctly. 
+* Error numbering on generic number association with structures with fusion protein in the middle of the pdb (like 5TVN).
 
 2.0.1 (31-08-2023)
 ******************

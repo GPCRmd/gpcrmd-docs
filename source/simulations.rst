@@ -53,9 +53,10 @@ Each simulation is classified into each class, family and subfamily. Similar tha
 Search
 ------
 
-The `Search` tool is divided into 3 parts: 
+The `Search` tool is divided into 4 parts: 
 
 * Filter 
+* Exporter
 * Browser
 * List of simulated systems
 
@@ -72,10 +73,26 @@ This part of the Search contains the name of all the columns available to be dis
   :width: 600
   :alt: GPCRmd search filter
 
+Exporter
+========
+
+The section contains some buttons that lets the user to export the data (considering also the browsing by column, see next section) into different formats:
+
+* Copy: copy into the clipboard the data. 
+* Csv: download the information into csv format.
+* Excel: download the information into excel format.
+* PDF: download the table into a pdf format.
+* Print: open the window of the printer to print the table.
+
+.. image:: _static/search_buttons.png
+  :width: 600
+  :alt: GPCRmd search buttons
+
+
 Browser
 =======
 
-The Browser provides to the user filter everything that it is written in the cell.
+The Browser provides to the user to filter each column by a value specified in in the text cell.
 
 .. image:: _static/search_browser.png
   :width: 600
@@ -89,6 +106,6 @@ The table rows contain a summary of the most important features of the simulatio
 * Clicking on "View" to visualize and analyze the simulation. 
 * Clicking on "Report", you will access the details of the system setup and simulation protocol, as well as links to download the simulation data.
 
-.. image:: _static/search.png
+.. image:: _static/search_all.png
   :width: 600
   :alt: GPCRmd search list

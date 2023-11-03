@@ -11,9 +11,10 @@ Heatmaps and dendrograms
 ========================
 
 These heatmaps display pre-calculated, non-covalent interaction frequencies (heatmap colour) between pairs of GPCR residues or ligand-residue (columns) in all available simulated systems (rows). To ensure comparability across systems, protein residues are labelled and aligned using `_generic GPCR residue numbers` (GPCRdb structure-based numbering). This numbering system differs for each GPCR class, so a multi-class index has been used on the heatmap's axis. Only interacting pairs with a minimum of 50% interaction frequency in at least one simulation in the dataset are displayed. Same-helix interactions are not displayed. More information from a specific interaction can be displayed by clicking on its cell.
-The accompanying dendrogram represents the results of the precomputed hierarchical clustering, with colours identifying the cluster each simulation has been assigned. Dendrograms are generated and displayed using the _plotly python library.
 
 .. image:: _static/heatmap_dend.png
+
+The accompanying dendrogram represents the results of the precomputed hierarchical clustering, with colours identifying the cluster each simulation has been assigned. Dendrograms are generated and displayed using the _plotly python library.
 
 Full dataset options
 ********************
@@ -31,7 +32,7 @@ After selecting your preferred options, click **Apply** to refresh the page with
 Customized dataset
 ******************
 
-.. image:: _static/custom_dataset_options.png
+.. image:: _static/custom_dataset.png
 
 Make a new heatmap with only the selected simulations in it. Use the **Select simulations** dropdown to specify your simulation subset, or click their name in the dendrogram. Finally, click apply to reload the metanalysis with only your specified systems. 
 Clustering options are not available for customized selections 
@@ -40,7 +41,7 @@ Clustering options are not available for customized selections
 About the Top representative interactions in clusters:
 ======================================================
 
-These plots show the *n* most frequent interactions (on average) in each of the clusters. Interactions are coloured based on the average frequency of the interaction within the cluster, according to the same color scale as the heatmap.
+These plots show the *n* most frequent interactions (on average) in each of the clusters. Interactions are coloured based on the average frequency of the interaction within the cluster, according to the same colour scale as the heatmap.
 
 Such plots were created using FlarePlots_, by Rasmus Fonseca (fonseca.rasmus@gmail.com) and Anthony Ma (anthonyma27@gmail.com).
 

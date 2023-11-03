@@ -10,7 +10,7 @@ This tool compares frequencies of non-covalent interactions occurring between GP
 Heatmaps and dendrograms
 ========================
 
-These heatmaps display pre-calculated, non-covalent interaction frequencies (heatmap colour) between pairs of GPCR residues or ligand-residue (columns) in all available simulated systems (rows). To ensure comparability across systems, protein residues are labelled and aligned using `_generic GPCR residue numbers` (GPCRdb structure-based numbering). This numbering system differs for each GPCR class, so a multi-class index has been used on the heatmap's axis. Only interacting pairs with a minimum of 50% interaction frequency in at least one simulation in the dataset are displayed. Same-helix interactions are not displayed. More information from a specific interaction can be displayed by clicking on its cell.
+These heatmaps display pre-calculated, non-covalent interaction frequencies (heatmap colour) between pairs of GPCR residues or ligand-residue (columns) in all available simulated systems (rows). To ensure comparability across systems, protein residues are labelled and aligned using `generic GPCR residue numbers`_ (GPCRdb structure-based numbering). This numbering system differs for each GPCR class, so a multi-class index has been used on the heatmap's axis. Only interacting pairs with a minimum of 50% interaction frequency in at least one simulation in the dataset are displayed. Same-helix interactions are not displayed. More information from a specific interaction can be displayed by clicking on its cell.
 
 .. image:: _static/heatmap_dend.png
 
@@ -27,7 +27,7 @@ Full dataset options
 4. **N clusters**: The number of clusters the systems will be classified into and displayed in the dendrogram 
 5. **Show reversed residue pairs**: Display each interaction twice in the heatmap, with the order of interacting residue pairs reversed (e.g.: 1x24-7x27 and 7x27-1x24).
 
-After selecting your preferred options, click **Apply** to refresh the page with the new parameters.
+After selecting your preferred options, click **Apply** to refresh the page with the new parameters. Use the **download** icon to download a CSV file with the displayed interaction values.
 
 Customized dataset
 ******************
@@ -38,42 +38,39 @@ Make a new heatmap with only the selected simulations in it. Use the **Select si
 Clustering options are not available for customized selections 
 
 
-About the Top representative interactions in clusters:
+Top representative interactions in clusters:
 ======================================================
 
-These plots show the *n* most frequent interactions (on average) in each of the clusters. Interactions are coloured based on the average frequency of the interaction within the cluster, according to the same colour scale as the heatmap.
+Flareplots
+**********
 
-Such plots were created using FlarePlots_, by Rasmus Fonseca (fonseca.rasmus@gmail.com) and Anthony Ma (anthonyma27@gmail.com).
+These plots display the *n* interacting pairs with higher frequency values within the simulations of each cluster. The colour of each path represents the average interaction frequency in this cluster, and correspond with the heatmap colourscale.To select a position on the flareplot, click on it. If available, this position will be displayed in the molecular viewer below. The number of displayed top interacting pairs can be changed with the dropdown embedded in the section description.
+
+Plots are created using FlarePlots_, by Rasmus Fonseca (fonseca.rasmus@gmail.com) and Anthony Ma (anthonyma27@gmail.com).
+
+.. image:: _static/flareplots_metanalysis.png
+
+1. **Show in structure***: Disable/Enable visualization of selected positions in the molecular viewer.
+2. **Cluster N**: Select the cluster whose top interactions will be displayed in the flareplot. Clusters 1 and 2 are shown by default.
+2. **Class X**: GPCR class whose generic numbering is to be displayed in the flareplot. Class A by default.
+3. **Clear plot**: Unselect all previously selected paths or residues.
+
+Molecule viewers
+****************
+
+The viewers at the bottom of the page (based on `NGL viewer`_) display simulations present in the clusters selected above, in the corresponding flareplot menu.
 
 How to use them:
 
-1. To select a cluster to display, use the dropup on top of each flareplot. Cluster 1 and Cluster 2 are shown by default.
-2. To select a position on the flareplot, click on it. If available, this position will be displayed on the structure viewer below.
-3. Press "show in structure" to disable or re-enable the visualization of selected positions.
-
-The viewers at the bottom of the page (based on `NGL viewer`_) display each of the simulations present in the cluster selected in the flareplot.
-
-How to use them:
-
-1. Use the top-right dropdown to select the simulation to display. Notice only simulations of the selected cluster are available.
-2. Use the top-left dropdown to select the trajectory file of this simulation to display.
-3. Press play to reproduce the simulation on the viewer.
-4. Click on any position in the flareplot to display it on the corresponding viewer.
-5. For a more detailed visualization of this simulation, click on "open with GPCRmd Workbench".
-
-
-Customized heatmaps
-====================
-It is possible to analyze only a specified set of simulations using the Customized heatmaps. For that, use the "Select simulations" dropdown to specify the simulations of interest. Simulations can also be selected by clicking on their dendrogram labels. Once the selection is done, click on "Apply".
-
-New plots showing the interactions of the simulations selected are generated. This allows for a more detailed one-to-one comparison of the interaction pattern of such simulations. 
-
-Please consider that a large simulation selection may require a long time to load. 
+1. **Simulation**: Select the system to be displayed. Only the ones in the specified cluster are avaliable.
+2. **Trajectory**: Select the trajectory file to display.
+3. **View in workbench**: Open simulation in GPCRmd workbench for in-detail analysis
+4. Press play to reproduce the simulation.
 
 
 .. _GetContacts: https://github.com/getcontacts/getcontacts
 .. _GetContacts interaction criteria: https://|URLDomain|/contmaps/contmaps/interaction_types
 .. _plotly: https://github.com/plotly/plotly.py
-.. _Generic GPCR residue numbers: http://docs.gpcrdb.org/generic_numbering.html
+.. _generic GPCR residue numbers: http://docs.gpcrdb.org/generic_numbering.html
 .. _FlarePlots: https://github.com/GPCRviz/flareplot
 .. _NGL viewer: https://github.com/arose/ngl

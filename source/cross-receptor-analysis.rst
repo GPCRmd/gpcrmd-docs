@@ -52,8 +52,8 @@ Plots are created using FlarePlots_, by Rasmus Fonseca (fonseca.rasmus@gmail.com
 
 1. **Show in structure**: Disable or enable visualization of selected positions in the molecular viewer.
 2. **Cluster N**: Select the cluster whose top interactions will be displayed in the flareplot. Clusters 1 and 2 are shown by default.
-2. **Class X**: GPCR class whose generic numbering is to be displayed in the flareplot. Class A by default.
-3. **Clear plot**: Unselect all previously selected paths or residues.
+3. **Class X**: GPCR class whose generic numbering is to be displayed in the flareplot. Class A by default.
+4. **Clear plot**: Unselect all previously selected paths or residues.
 
 Molecule viewers
 ****************

@@ -44,13 +44,13 @@ Top representative interactions in clusters:
 Flareplots
 **********
 
-These plots display the *n* interacting pairs with higher frequency values within the simulations of each cluster. The colour of each path represents the average interaction frequency in this cluster and corresponds with the heatmap colourscale.To select a position on the flareplot, click on it. If available, this position will be displayed in the molecular viewer below. The number of displayed top interacting pairs can be changed with the dropdown embedded in the section description.
+These plots display the *n* interacting pairs with higher frequency values within the simulations of each cluster. The colour of each path represents the average interaction frequency in this cluster and corresponds with the heatmap colour scale. To select a position on the flareplot, click on it. If available, this position will be displayed in the molecular viewer below. The number of displayed top interacting pairs can be changed with the dropdown embedded in the section description.
 
 Plots are created using FlarePlots_, by Rasmus Fonseca (fonseca.rasmus@gmail.com) and Anthony Ma (anthonyma27@gmail.com).
 
 .. image:: _static/flareplots_metanalysis.png
 
-1. **Show in structure**: Disable/Enable visualization of selected positions in the molecular viewer.
+1. **Show in structure**: Disable or enable visualization of selected positions in the molecular viewer.
 2. **Cluster N**: Select the cluster whose top interactions will be displayed in the flareplot. Clusters 1 and 2 are shown by default.
 2. **Class X**: GPCR class whose generic numbering is to be displayed in the flareplot. Class A by default.
 3. **Clear plot**: Unselect all previously selected paths or residues.
@@ -62,7 +62,7 @@ The viewers at the bottom of the page (based on `NGL viewer`_) display simulatio
 
 How to use them:
 
-1. **Simulation**: Select the system to be displayed. Only the ones in the specified cluster are avaliable.
+1. **Simulation**: Select the system to be displayed. Only the ones in the specified cluster are available.
 2. **Trajectory**: Select the trajectory file to display.
 3. **View in workbench**: Open simulation in GPCRmd workbench for in-detail analysis
 4. Press play to reproduce the simulation.

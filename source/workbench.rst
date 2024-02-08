@@ -338,6 +338,14 @@ Displays an averaged water density map of the MD trajectory under study. Maps ar
 Dynamic pharmacophores:
 =======================
 
+Each sphere represents a point where two atoms made a ligand-receptor interaction at some point in the displayed simulation trajectory.
+
+* **Ligand/Receptor pharmacophores checkboxes**: Click to display spheres corresponding to ligand or receptor interacting atom coordinates, respectively.
+* **Interaction type**: Spheres represent atoms making an interaction of this type.
+* **Color pattern**: Color spheres by either the element or the system component (ligand or receptor) of the represented interacting atom. 
+
+Dynamic pharmacophores are precalculated using interaction data produced with the software "GetContacts".
+
 .. image:: _static/tools_pharma.png
   :width: 600
   :alt: GPCRmd toolkit pharmacophores 

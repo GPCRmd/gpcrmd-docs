@@ -26,7 +26,7 @@ Changelog
 * On some paramaters the whitespaces causes errors. 
 * Sdf file image in png not showing at report page. 
 
-2.0.2 (27-10-2023, postponed to 03-11-2023)
+2.0.2 (03-11-2023)
 ******************
 
 **Added**   

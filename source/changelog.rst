@@ -4,6 +4,28 @@ Changelog
 .. toctree::
     :maxdepth: 1
 
+2.0.3 (08-02-2024)
+******************
+
+**Added**   
+
+* New function on GPCRmd API to get information about the compounds elements simulated in GPCRmd grouped by type.
+  
+**Changed**  
+
+* Update of the receptor-meta-analysis and pharmacophores documentation. 
+* Update of the publication page.
+  
+**Fixed**  
+
+* Error on cms format when is loaded in the step 4. 
+* Style of the numbers of the sliders of the water volume distribution tool.
+* Button Tool > Simulation tools not working at the home page.
+* Publication page do not show the table of submissions. 
+* Bugs of the Pockets tool. 
+* On some paramaters the whitespaces causes errors. 
+* Sdf file image in png not showing at report page. 
+
 2.0.2 (27-10-2023, postponed to 03-11-2023)
 ******************
 

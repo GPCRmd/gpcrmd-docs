@@ -91,7 +91,7 @@ At the home account page, in the top of the right box, the user have some option
   :width: 600
   :alt: GPCRmd log in
 
-* **Secret submission key**: change the secret key necessary to view the non-published submissions.
+* **Secret submission key**: create or change the key requested for non-published submission. The use of this key is to protect data that are in process of publication. Only the user have the possibility to share this key with people that it wants to show the submission, like reviewers. 
 
 .. image:: _static/gpcrmd_accsecret.png
   :width: 600

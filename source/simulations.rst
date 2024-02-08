@@ -46,7 +46,7 @@ Here, the user can identify all simulations included into GPCRmd divided into tw
 Each simulation is classified into each class, family and subfamily. Similar than the Family tree but grouped. The user can expand each of these groups until get the simulations related to a specific family. To view the simulation the user can click on the red text link (e.g. ID 90).
 
 .. image:: _static/dataset_display.png
-  :width: 600
+  :width: 400
   :alt: GPCRmd dataset display
 
 ------
@@ -67,7 +67,7 @@ The `Search` tool is divided into 4 parts:
 Filter                  
 ======
 
-This part of the Search contains the name of all the columns available to be displayed in the search table. The user can select or deselect the columns that it wants to be displayed into the table. In the next example the user select the columns: Uniprot id, Class, PDB id, State, Species, Model type and Num. of atoms.
+This part of the Search contains the name of all the columns available to be displayed in the search table. The user can select or deselect the columns that it wants to be displayed into the table. Selected columns are highlighted.
 
 .. image:: _static/search_filter.png
   :width: 600
@@ -85,14 +85,14 @@ The section contains some buttons that lets the user to export the data (conside
 * Print: open the window of the printer to print the table.
 
 .. image:: _static/search_buttons.png
-  :width: 600
+  :width: 300
   :alt: GPCRmd search buttons
 
 
 Browser
 =======
 
-The Browser provides to the user to filter each column by a value specified in in the text cell.
+The Browser provides to the user to filter each column by a value specified in the text cell.
 
 .. image:: _static/search_browser.png
   :width: 600

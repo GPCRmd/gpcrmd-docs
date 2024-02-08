@@ -234,7 +234,7 @@ Step 4: Simulation files
 
 The next step is to upload the files that in the pre-submission step was required to be checked and prepared. 
 
-    * **Topology file**: list of the atoms, masses, charges and connections between atoms. The Currently, GPCRmd accepts the next extensions: psf, top.
+    * **Topology file**: list of the atoms, masses, charges and connections between atoms. The Currently, GPCRmd accepts the next extensions: psf, top, cms.
     * **Trajectory file**: sequential snapshots of simulated molecular system which represents atomic coordinates at specific time periods. The use can select more than one. Currently, GPCRmd accepts the next extensions: dcd, xtc, trr.
     * **Simulation parameters**: contains all the input parameters. Currently, GPCRmd accepts the next extensions: prm, prmtop, zip, tar.gz, tgz.
     * **Simulation protocol**: group of files used to launch the simulation. Necessary in case of replica. Currently, GPCRmd accepts the next extensions: zip, tar.gz, tgz. 

@@ -4,6 +4,27 @@ Changelog
 .. toctree::
     :maxdepth: 1
 
+2.0.4 (08-03-2024)
+******************
+
+**Added**   
+
+* New policy on the pre-submission, point 4 to avoid incomplete submissions: "Step 5 on references can be completed after publication. Please submit the full citation with the DOI once available. Failure to do so may result in automatic closure of the submission without reference completion."
+* Update of the submission table style to facilitate the user to take a look into their previous submissions.
+* Search tool filters can accept regular expressions to filter the data `RegEx <https://en.wikipedia.org/wiki/Regular_expression>`_ (e.g. State > Active or Inactive > ^Active, ^ means startswith, in this case only get active results).
+
+**Changed**  
+
+* Change of the max upload file size accepted for the server in order to incorporate bigger systems. 
+* Users do not need to use the submission protection key to acces into his submissions if they are the owners. To share with other people you need to continue sharing with them the dynamic id and the submission key.
+  
+**Fixed** 
+
+* Error with whitespaces on the field of uniprotkbac at the submission form step3.
+* Emails to notify maintenance blocked by Gmail and not reaching the users.  
+* Error with distance and rmsd tool with new data (not working). 
+* Data login request when the user try to download files of published submissions. 
+
 2.0.3 (08-02-2024)
 ******************
 

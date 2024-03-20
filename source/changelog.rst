@@ -4,6 +4,22 @@ Changelog
 .. toctree::
     :maxdepth: 1
 
+2.0.4.1 (20-03-2024)
+******************
+
+**Added**   
+
+* New API documentation to explain more in detail how the functions work.
+
+**Changed**  
+
+* Meta-analysis tool style. 
+
+**Fixed** 
+
+* Selection tool gives an error using the generic numbering nomenclature. 
+* Step 3 of the submission form not showing the sdf image of the molecule, mainly basic ions like Calcium, Sodium and Water, among others. 
+
 2.0.4 (08-03-2024)
 ******************
 

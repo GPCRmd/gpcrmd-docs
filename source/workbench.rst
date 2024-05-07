@@ -165,15 +165,6 @@ It is also possible to visualize the positions that correspond to conserved posi
   :width: 600
   :alt: GPCRmd viewer quick selection
 
-Experimental density map:
---------------------------
-
-Display X-ray or electron microscopy density maps by defining any selection within this section. By default, this will also modify the representation of the molecules of the system. To change this behavior, un-select the option "Apply default representations" within *Selection settings*.
-
-.. image:: _static/tools_viewer_setden.png
-  :width: 600
-  :alt: GPCRmd viewer quick selection
-
 -------
 Toolkit
 -------
@@ -325,6 +316,15 @@ This tool computes the RMSD of all the conformations in a target trajectory to a
 .. image:: _static/tools_rmsd.png
   :width: 600
   :alt: GPCRmd toolkit rmsd 
+
+Experimental density map:
+==========================
+
+Display X-ray or electron microscopy density maps by defining any selection within this section. By default, this will also modify the representation of the molecules of the system. To change this behavior, un-select the option "Apply default representations" within *Selection settings*.
+
+.. image:: _static/tools_viewer_setden.png
+  :width: 600
+  :alt: GPCRmd tool to display experimental density maps
 
 Water volume distribution:
 ==========================

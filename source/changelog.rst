@@ -9,14 +9,15 @@ Changelog
 
 **Added**   
 
-* Step 1 & 4 shows the files that user upload into the submission. 
+* Step 1 & 4 shows the files that user previously upload into the submission. 
+* Step 1 & 4 do not request always the file/s if some file was uploaded previously.
 * To access into non-published submission reports need the submission key like in the viewer.
 * News with articles of the published submission into GPCRmd.
 
 **Fixed** 
 
-* Errors on the step2 & 3 related with small molecules or chains returning Server error message.
-* Search tool shows non-published data that are not public available. 
+* Errors on the step2 & 3 related with small molecules or chains returning 'Server error message'.
+* Search & Datasets tool showing non-published data that are not public available. 
 * Clean of uncomplete submissions. 
 
 2.0.4.1 (20-03-2024)

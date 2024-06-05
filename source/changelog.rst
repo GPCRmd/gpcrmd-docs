@@ -4,6 +4,23 @@ Changelog
 .. toctree::
     :maxdepth: 1
 
+2.0.6 (10-06-2024)
+******************
+
+**Added**   
+
+* Downloader API change to improve the following of the process of downloading. 
+* Step 1 submissions with no PDB code can introduce "-" to indicate that is not PDB code related. *Note: Recommended to change it later if a PDB code is assigned to the structure.*  
+* Buttons on the home page to jump into the sections: tools, news and statistics. 
+
+**Changed**
+* Due confusion the name of the download_all API function to download_id. This functions download all the files related to a dynamic not download the whole database. 
+* Order of the tools in the home page following the alphabetical order. 
+
+**Fixed** 
+
+* Add references to some submissions avoiding non-reference indications to cite the papers. 
+
 2.0.5 (02-05-2024)
 ******************
 
@@ -18,7 +35,7 @@ Changelog
 
 * Errors on the step2 & 3 related with small molecules or chains returning 'Server error message'.
 * Search & Datasets tool showing non-published data that are not public available. 
-* Clean of uncomplete submissions. 
+* Clean of uncompleted submissions. 
 
 2.0.4.1 (20-03-2024)
 ******************
@@ -48,13 +65,13 @@ Changelog
 **Changed**  
 
 * Change of the max upload file size accepted for the server in order to incorporate bigger systems. 
-* Users do not need to use the submission protection key to acces into his submissions if they are the owners. To share with other people you need to continue sharing with them the dynamic id and the submission key.
+* Users do not need to use the submission protection key to access into his submissions if they are the owners. To share with other people you need to continue sharing with them the dynamic id and the submission key.
   
 **Fixed** 
 
-* Error with whitespaces on the field of uniprotkbac at the submission form step3.
+* Error with whitespace on the field of Uniprotkbac at the submission form step3.
 * Emails to notify maintenance blocked by Gmail and not reaching the users.  
-* Error with distance and rmsd tool with new data (not working). 
+* Error with distance and RMSD tool with new data (not working). 
 * Data login request when the user try to download files of published submissions. 
 
 2.0.3 (08-02-2024)
@@ -76,7 +93,7 @@ Changelog
 * Button Tool > Simulation tools not working at the home page.
 * Publication page do not show the table of submissions. 
 * Bugs of the Pockets tool. 
-* On some paramaters the whitespaces causes errors. 
+* On some parameters the whitespace causes errors. 
 * Sdf file image in png not showing at report page. 
 
 2.0.2 (03-11-2023)

@@ -4,6 +4,17 @@ Changelog
 .. toctree::
     :maxdepth: 1
 
+2.0.7 (05-08-2024 | 09-08-2024)
+*******************************
+
+This update is mainly to improve the server performance:
+
+* API downloader on multiple requests.
+* Fluent of the viewer with multiple user requests.
+* Smoothly load of the trajectories. 
+* Improvements on the submission form. 
+  ...
+
 2.0.6 (10-06-2024)
 ******************
 

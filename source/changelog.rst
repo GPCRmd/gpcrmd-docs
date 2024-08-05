@@ -14,7 +14,8 @@ Changelog
 * Buttons on the home page to jump into the sections: tools, news and statistics. 
 
 **Changed**
-* Due confusion the name of the download_all API function to download_id. This functions download all the files related to a dynamic not download the whole database. 
+
+* Due confusion the name of the download_all API function to download_id. This functions download all the files related to a dynamic not download the whole database.  
 * Order of the tools in the home page following the alphabetical order. 
 
 **Fixed** 

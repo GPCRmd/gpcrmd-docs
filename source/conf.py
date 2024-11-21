@@ -7,10 +7,10 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'gpcrmd-docs'
-copyright = '2023, GPCRmd, GPCR drug discovery group'
+copyright = '2024, GPCRmd, GPCR drug discovery group'
 author = 'GPCRmd'
 version = '2.0'
-release = '2.0.7'
+release = '2.0.8'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

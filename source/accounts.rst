@@ -93,9 +93,18 @@ At the home account page, in the top of the right box, the user have some option
 
 * **Secret submission key**: create or change the key requested for non-published submission. The use of this key is to protect data that are in process of publication. Only the user have the possibility to share this key with people that it wants to show the submission, like reviewers. 
 
+Here, is the request form to access into a non-published submission:
+
 .. image:: _static/gpcrmd_accsecret.png
   :width: 600
   :alt: GPCRmd log in
+
+* **Dynamic id:** The identifier of the dynamic. 
+* **Submission password:** The Secret submission key. 
+
+.. image:: _static/gpcrmd_accsecretreq.png
+  :width: 600
+  :alt: GPCRmd request access
 
 * **Log out**: to disconnect from GPCRmd.
 

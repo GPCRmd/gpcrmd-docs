@@ -4,19 +4,22 @@ Changelog
 .. toctree::
     :maxdepth: 1
 
-2.0.8 (¿02-10-2024?)
+2.0.8 (16-11-2024)
 *******************************
 
-**Added**   
-* Dynamic id as parameter on the search table (https://devel.gpcrmd.org/dynadb/search/). 
-* Loader and cancel button on "View" button of the search tables.
-* Some new FAQs to help users (https://gpcrmd-docs.readthedocs.io/en/latest/faqs.html).
+**Added**     
 
-**Changed**
-* Simulation tool search table modified to be easily use.
+* Dynamic id as parameter on the search table (https://devel.gpcrmd.org/dynadb/search/).   
+* Loader and cancel button on "View" button of the search tables.  
+* Some new FAQs to help users (https://gpcrmd-docs.readthedocs.io/en/latest/faqs.html).  
 
-**Fixed** 
-* Some minor bugs on the submission form.
+**Changed**  
+
+* Simulation tool search table modified to be easily use.  
+
+**Fixed**   
+
+* Some minor bugs on the submission form.  
 
 2.0.7 (05-08-2024 | 09-08-2024)
 *******************************

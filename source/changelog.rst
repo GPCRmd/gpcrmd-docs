@@ -4,12 +4,34 @@ Changelog
 .. toctree::
     :maxdepth: 1
 
+2.0.9 (14-02-2025)
+*******************************
+
+**Added**     
+
+* New storage machine to store new income data from the community.
+
+**Changed**  
+
+* Reference on the report page to be more clear.  
+* Home style to be more fitted for mobile devices. 
+
+**Fixed**   
+
+* Menu dropdown on the publication page.  
+* Search by submitter on the search page. 
+
+**Next**
+
+* Possibility to multi submit submissions using the API.  
+
+
 2.0.8 (16-11-2024)
 *******************************
 
 **Added**     
 
-* Dynamic id as parameter on the search table (https://devel.gpcrmd.org/dynadb/search/).   
+* Dynamic id as parameter on the search table (https://www.gpcrmd.org/dynadb/search/).   
 * Loader and cancel button on "View" button of the search tables.  
 * Some new FAQs to help users (https://gpcrmd-docs.readthedocs.io/en/latest/faqs.html).  
 

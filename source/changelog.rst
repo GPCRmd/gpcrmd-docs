@@ -4,6 +4,34 @@ Changelog
 .. toctree::
     :maxdepth: 1
 
+2.1.0 (undefined)
+*******************************
+
+**Added**     
+
+* Second round of GPCRmd data published ([Nature Communications](https://doi.org/10.1038/s41467-025-57034-y)).
+* Two new tools to analyze **allosteric sites** and **intracellular core conformation** via lipids.
+* New **State** parameter included in **Step 1** of the submission form.
+* Added **AlphaFold** as a new **Source type** and **PDB ID** option in `Steps 1/3 of the submission form <https://gpcrmd-docs.readthedocs.io/en/latest/submissions.html#simulation-submission-guide>`_.
+* Introduced a **Source type** filter in the search table for easier data discovery.
+* Added the **GPCRmd publication code**, enabling users to create a publication page to share and link multiple submissions under the same reference.
+
+**Changed**  
+
+* Search tables now display the **Model name** next to the receptor by default.
+* The **Class** column is hidden by default in search tables.
+* Submission form ([documentation](https://gpcrmd-docs.readthedocs.io/en/latest/submissions.html#simulation-submission-guide)) non-updated (step 1, 3 & 5).
+
+**Fixed**   
+
+* API downloader now correctly retrieves responses from the worker after a server restart.
+* Fixed missing image in the **Variants** tool caused by a broken link due to DisGeNET website style updates.
+* All **Type** and **Source type** options now correctly display on saved submissions.
+
+**Next**
+
+* Implementation of **batch submissions via API** (production release).
+
 2.0.9 (14-02-2025)
 *******************************
 
@@ -23,7 +51,7 @@ Changelog
 
 **Next**
 
-* Possibility to multi submit submissions using the API.  
+* Possibility to multi submit submissions using the API (testing release).  
 
 
 2.0.8 (16-11-2024)

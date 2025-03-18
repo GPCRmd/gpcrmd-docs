@@ -58,9 +58,13 @@ This block contains the main information used to tag the submission.
 
    * **Name**: title of the simulation used to describe the content of the submission. 
    * **Type**: classify the simulation into a complex or an apoform. 
-   * **PDB ID**: protein data bank identifier of the structure which the simulations was based. This parameter is important for the next steps, guarantee that is correct.
+   * **PDB ID**: protein data bank identifier of the structure which the simulations was based. This parameter is important for the next steps, guarantee that is correct. In case that you do not have a PDB code then use:
+    - **AlphaFold model**: Use the word "ALPHA".
+    - **Homology model**: Use the word "HOMO".
+    - **Non PDB code**: Use the character "-".
    * **Description**: long text describing the simulation. 
    * **Source Type**: source of obtaining of the protein structure. 
+   * **State Type**: state of the initial protein structure used for the simulation.
 
 .. image:: _static/gpcrmd_step1a.png
   :width: 600
@@ -178,7 +182,12 @@ The parameters of each entry are:
   * **Other names**: Alias or other names. 
   * **UniProt organism id**: Uniprot taxon node of the specie this protein belongs to.
   * **Sequence**: sequence assigned to the UniprotKb.
-  * **Not a GPCR**: check in case that the entry protein is not a GPCR.
+  * **Protein type**: type of the protein chain detected: 
+      - **GPCR**  
+      - **G protein subunit**  
+      - **Beta arrestin**  
+      - **Peptide ligand**  
+      - **Other**  
   
 .. image:: _static/gpcrmd_step3manual.png
   :width: 600
@@ -195,7 +204,10 @@ Segments
 
 This part is determined by the chains that the tool detects on the structure file (.pdb). Here, is indicated some parameters related with the chain and the segments that are part of it: 
 
-* **PDB id**: protein data bank identifier detailed in the step 1. 
+* **PDB id**: protein data bank identifier detailed in the step 1. In case that you do not have a PDB code then use:
+    - **AlphaFold model**: Use the word "ALPHA".
+    - **Homology model**: Use the word "HOMO".
+    - **Non PDB code**: Use the character "-".
 * **Source type**: source of obtaining determined in the step 1. 
 * **ChainID**: name of the chain detected in the pdb file. 
 * **SegmentID**: segment name detected in the pdb file. 
@@ -254,6 +266,7 @@ Step 5: References
 
 As some of the previous steps, the user can add the information automatically, using the retrieve option with a doi, or write it manually.
 
+  * **GPCRmd publication code**: Internal code generated and related to a publication page. Use this code on each submission that you want to relate to the same publication page.  
   * **DOI**: Digital Object Identifier, is a string of numbers, letters and symbols used to uniquely identify an article or document, and to provide it with a permanent web address. 
   * **Authors**: name of the all authors involved in the publication separated by comma. 
   * **Title**: the title of the publication.

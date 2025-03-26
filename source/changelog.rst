@@ -4,12 +4,16 @@ Changelog
 .. toctree::
     :maxdepth: 1
 
-2.1.0 (undefined)
+2.1.0 (08-04-2025 | 10-04-2025)
 *******************************
+
+**IMPORTANT**
+
+* Terms & conditions of GPCRmd are updated to improve the protection of the data from the users and misused of the database.  
 
 **Added**     
 
-* Second round of GPCRmd data published ([Nature Communications](https://doi.org/10.1038/s41467-025-57034-y)).
+* Second round of GPCRmd data published: https://doi.org/10.1038/s41467-025-57034-y.
 * Two new tools to analyze **allosteric sites** and **intracellular core conformation** via lipids.
 * New **State** parameter included in **Step 1** of the submission form.
 * Added **AlphaFold** as a new **Source type** and **PDB ID** option in `Steps 1/3 of the submission form <https://gpcrmd-docs.readthedocs.io/en/latest/submissions.html#simulation-submission-guide>`_.
@@ -20,7 +24,8 @@ Changelog
 
 * Search tables now display the **Model name** next to the receptor by default.
 * The **Class** column is hidden by default in search tables.
-* Submission form ([documentation](https://gpcrmd-docs.readthedocs.io/en/latest/submissions.html#simulation-submission-guide)) non-updated (step 1, 3 & 5).
+* Submission form (https://gpcrmd-docs.readthedocs.io/en/latest/submissions.html#simulation-submission-guide) updated (step 1, 3 & 5).
+* Step 4 & 5 disabled from the "Simulation Submission Index" if you do not submit correctly the step 1, 2 & 3. 
 
 **Fixed**   
 

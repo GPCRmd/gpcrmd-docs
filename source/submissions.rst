@@ -282,7 +282,9 @@ As some of the previous steps, the user can add the information automatically, u
   :width: 600
   :alt: Submission form step 5 
 
-This step5 can be omitted temporarily, but please do not forget to fill it in once you have all the information about your publication. Also, all submissions sharing the same DOI will be provided with a summary page to include in the references of your paper. If you put a random token (e.g.: abysms) in the DOI field and submit it like that a page will also be generated, and you will be able to change it later. 
+This step5 can be omitted temporarily, but please do not forget to fill it in once you have all the information about 
+your publication. Also, all submissions sharing the same **GPCRmd publication code** will be provided with a publication page to include in the 
+references of your paper. 
 
 Example: `Link <https://www.gpcrmd.org/dynadb/publications/1486/>`_
 

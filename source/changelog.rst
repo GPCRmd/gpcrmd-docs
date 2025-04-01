@@ -18,7 +18,7 @@ Changelog
 * New **State** parameter included in **Step 1** of the submission form.
 * Added **AlphaFold** as a new **Source type** and **PDB ID** option in `Steps 1/3 of the submission form <https://gpcrmd-docs.readthedocs.io/en/latest/submissions.html#simulation-submission-guide>`_.
 * Introduced a **Source type** filter in the search table for easier data discovery.
-* Added the **GPCRmd publication code**, enabling users to create a publication page to share and link multiple submissions under the same reference.
+* Added the **GPCRmd publication code**, enabling users to create a publication page to share and link multiple submissions under the same reference https://gpcrmd-docs.readthedocs.io/en/latest/submissions.html#step-5-references).  
 * Added a new FAQs & guide "How to cite my submission into an article?": https://gpcrmd-docs.readthedocs.io/en/latest/citation.html
 
 **Changed**  

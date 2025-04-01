@@ -12,7 +12,7 @@ FAQs
 
 * **Q:** How can I cite my submission/simulation into an article?
 
-  * **A:** `GPCRmd submission citation guide <https://gpcrmd-docs.readthedocs.io/en/latest/submissions.html>`_
+  * **A:** `GPCRmd submission citation guide <https://gpcrmd-docs.readthedocs.io/en/latest/citation.html>`_
 
 * **Q:** How can I share unpublished submissions that are not public with others?
 

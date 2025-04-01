@@ -10,6 +10,10 @@ FAQs
 
   * **A:** `GPCRmd submission guide <https://gpcrmd-docs.readthedocs.io/en/latest/submissions.html>`_
 
+* **Q:** How can I cite my submission/simulation into an article?
+
+  * **A:** `GPCRmd submission citation guide <https://gpcrmd-docs.readthedocs.io/en/latest/submissions.html>`_
+
 * **Q:** How can I share unpublished submissions that are not public with others?
 
   * **A:** As the owner of the submission, you can share the "Secret submission key" to provide access to the dynamic. For more information, refer to the documentation here: https://gpcrmd-docs.readthedocs.io/en/latest/accounts.html#gpcrmd-account-menu .

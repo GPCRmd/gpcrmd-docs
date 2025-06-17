@@ -13,8 +13,7 @@ Welcome to GPCRmd's documentation!
    tools 
    simulations
    submission
+   search
    citing-gpcrmd
    faqs
    changelog
-
-   

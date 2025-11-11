@@ -20,7 +20,7 @@ Changelog
 
 **Changed**  
 
-* As anonymous user you can see only the first edition of GPCRmd and the individual contributions, only use some basic tools to analyze the data and you can not download files if you are not registered.
+* As anonymous user you can see only the first edition of GPCRmd and the individual contributions, only use some basic tools to analyze the data if you are not registered.
 * Display for the login page to indicate the need of an academic email to access to the whole GPCRmd database.
 * Updated the header menu to provide a direct link to the registration and login pages, and reorganized it for a more streamlined layout.
 

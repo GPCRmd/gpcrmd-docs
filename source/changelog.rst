@@ -4,6 +4,30 @@ Changelog
 .. toctree::
     :maxdepth: 1
 
+
+2.1.1 (11-11-2025)  
+*******************************
+
+**IMPORTANT**
+
+* The terms and conditions of GPCRmd have been updated to enhance user data protection and prevent database misuse.  
+* Registration with an academic email is now required to access the complete GPCRmd database, ensuring data security and proper usage.
+
+**Added**     
+
+* Use .gro files as coordinates input in Step 1 of the submission form.
+* Registration page updated to include academic manual email verification for full database access.
+
+**Changed**  
+
+* As anonymous user you can see only the first edition of GPCRmd and the individual contributions, only use some basic tools to analyze the data and you can not download files if you are not registered.
+* Display for the login page to indicate the need of an academic email to access to the whole GPCRmd database.
+* Updated the header menu to provide a direct link to the registration and login pages, and reorganized it for a more streamlined layout.
+
+**Fixed**   
+
+* Problems with format .tar.gz when uploading files in step 4 of the submission form.
+
 2.1.0 (08-04-2025 | 10-04-2025)
 *******************************
 

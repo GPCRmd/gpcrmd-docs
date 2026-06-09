@@ -5,6 +5,27 @@ Changelog
     :maxdepth: 1
 
 
+2.2 (09-06-2026)  
+*******************************
+
+**IMPORTANT**
+
+* Update the operating system to incorporate security patches. 
+
+**Added**
+
+* Implemented restrictions on bot usage (e.g., data scraping) to prevent server overload.
+
+**Changed**  
+
+* Modified Step 3 of the submission form so that mutations containing "-" are no longer displayed.
+
+**Fixed**   
+
+* Fixed the incorporation of small molecules lacking an InChIKey in Step 2.
+* Corrected typographical and data errors in certain entries.
+* Resolved minor errors in Step 5 during reference entry creation.
+
 2.1.1 (11-11-2025)  
 *******************************
 

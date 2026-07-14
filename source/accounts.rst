@@ -7,33 +7,16 @@ GPCRmd accounts guide
 
 In order to upload submissions into GPCRmd or use some of the GPCRmd API services you must need an account. Next, it is explain step by step how to create an account in GPCRmd from zero. 
 
-Contact with GPCRmd team
-========================
-
-To start the process to create an account, the user should go first to the section "Submission" from the top menu of GPCRmd:
-
-.. image:: _static/gpcrmd_home.png
-  :width: 600
-  :alt: GPCRmd home
-
-Then, the user will access into a new section of the web, the submission login form. Here, it can be read the policy submission terms and you have access to the mail to contact us for the creation of the account or any doubt/problem with GPCRmd: **info@gpcrmd.org**. 
-
-.. image:: _static/gpcrmd_acclogin.png
-  :width: 600
-  :alt: GPCRmd log in account
-
-We always try to answer as faster as we can, we apologize in advance if we take some long time to answer.
-
 Register
 ========
 
-Once, you contact us we will send to you a link to a register form that must be complete to create a new account into GPCRmd. The user must to complete all the parameters: 
+To start the process to create an account, the user should go first to the section "Register" from the top menu of GPCRmd:
 
 .. image:: _static/gpcrmd_accreg.png
   :width: 600
   :alt: GPCRmd register page
 
-The **secret submission key** is a password used to protect the non-published submissions. If you wanna share with others the link of these submissions is necessary to access using this key. 
+(OPTIONAL) The **secret submission key** is a password used to protect the non-published submissions. If you wanna share with others the link of these submissions is necessary to access using this key. 
 
 .. warning::
   Save the password safety because from here you can only reset the password, not recover it. 
@@ -43,6 +26,27 @@ Click on submit and if all the process runs correctly the user will obtain a mes
 .. image:: _static/gpcrmd_accregyes.png
   :width: 600
   :alt: GPCRmd register confirm
+
+Contact with GPCRmd team
+========================
+
+If you have any problem you can use the "Log in" section or click on "More" and next on "Contact" to send a message to the GPCRmd team.  
+
+.. image:: _static/gpcrmd_home.png
+  :width: 600
+  :alt: GPCRmd home
+
+In the case of use the "Log in" section, the user will access into a new section of the web, the submission login form. Here, it can be read the policy submission terms and you have access to the mail to contact us for the creation of the account or any doubt/problem with GPCRmd: **info@gpcrmd.org**. 
+
+.. image:: _static/gpcrmd_acclogin.png
+  :width: 600
+  :alt: GPCRmd log in account
+
+We always try to answer as faster as we can, we apologize in advance if we take some long time to answer.
+
+.. warning::
+  If you academic domain is not recognized by our system write to us at **info@gpcrmd.org**.
+
 
 Activation
 ==========
@@ -70,9 +74,9 @@ If the user wants to start to upload simulations go to the submission section.
 GPCRmd account menu
 ===================
 
-At the home account page, in the top of the right box, the user have some options to manage the account:  
+At the home page, at the top on the Account menu, the user have some options to manage the account:  
 
-.. image:: _static/gpcrmd_accin.png
+.. image:: _static/gpcrmd_account.png
   :width: 600
   :alt: GPCRmd log in
 
@@ -93,11 +97,11 @@ At the home account page, in the top of the right box, the user have some option
 
 * **Secret submission key**: create or change the key requested for non-published submission. The use of this key is to protect data that are in process of publication. Only the user have the possibility to share this key with people that it wants to show the submission, like reviewers. 
 
-Here, is the request form to access into a non-published submission:
-
 .. image:: _static/gpcrmd_accsecret.png
   :width: 600
   :alt: GPCRmd log in
+
+Here, is the request form to access into a non-published submission (e.g. for reviewers). The user must to complete the next parameters:
 
 * **Dynamic id:** The identifier of the dynamic. 
 * **Submission password:** The Secret submission key. 
@@ -105,6 +109,9 @@ Here, is the request form to access into a non-published submission:
 .. image:: _static/gpcrmd_accsecretreq.png
   :width: 600
   :alt: GPCRmd request access
+
+.. note:: 
+  The owner is not necessary to fill this form to access into their own submissions.
 
 * **Log out**: to disconnect from GPCRmd.
 

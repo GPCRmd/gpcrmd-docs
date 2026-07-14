@@ -5,7 +5,7 @@ Simulation submission guide
 .. contents:: The simulation submission process consists in several steps:
     :depth: 2
 
-To upload submissions into GPCRmd you must need an account. The creation of an account is explained in the account section. 
+To upload submissions into GPCRmd you must need an account. The creation of an account is explained in the `account section <https://gpcrmd-docs.readthedocs.io/en/latest/accounts.html#gpcrmd-accounts-guide>`_. 
 
 Pre-submission
 ==============

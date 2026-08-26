@@ -5,7 +5,8 @@ Web services
 .. contents:: 
     :depth: 2
 
-The GPCRmd API is oriented to facilitate to users to acces to the information of GPCRmd database more efficienty and fastest using coding and urls. Behind this tool we used the framework django-rest with the updated Swagger version under the name of `drf_yasg`. 
+The GPCRmd API is oriented to facilitate to users to acces to the information of GPCRmd database more efficienty and fastest using coding and 
+  urls. Behind this tool we used the framework django-rest with the updated Swagger version under the name of `drf_yasg`. 
 
 .. image:: _static/gpcrmd_api.png
   :width: 600

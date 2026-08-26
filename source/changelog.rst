@@ -5,6 +5,35 @@ Changelog
     :maxdepth: 1
 
 
+2.3 (24 to 28-08-2026)
+*******************************
+
+**IMPORTANT**
+
+* Introduced a weekly quota limiting the number of dynamics a user can download, 
+  to prevent server overload from repeated large-scale download requests.
+
+**Added**
+
+* Displayed the current weekly download quota usage in the large-scale download tool.
+* Added automatic recovery of an in-progress download after a page reload.
+
+**Changed**
+
+* Reworked the large-scale downloader to reuse previously generated files for 
+  identical requests instead of regenerating them each time.
+* Enforced the 5-dynamics-per-request limit directly when the request is submitted.
+* Adjusted the download progress polling to use a growing interval, reducing 
+  server load during long downloads.
+* The download log file now opens in a new browser tab.
+
+**Fixed**
+
+* Fixed a bug where the progress bar could stop updating before a download finished.
+* Fixed a error that could interrupt the progress-polling cycle.
+* Removed an unnecessary delay in the download-status check that could slow down 
+  the server with multiple simultaneous users.
+
 2.2 (09-06-2026)  
 *******************************
 
@@ -49,7 +78,7 @@ Changelog
 
 * Problems with format .tar.gz when uploading files in step 4 of the submission form.
 
-2.1.0 (08-04-2025 | 10-04-2025)
+2.1.0 (08 to 10-04-2025)
 *******************************
 
 **IMPORTANT**
@@ -122,7 +151,7 @@ Changelog
 
 * Some minor bugs on the submission form.  
 
-2.0.7 (05-08-2024 | 09-08-2024)
+2.0.7 (05 to 09-08-2024)
 *******************************
 
 This update is mainly to improve the server performance:

@@ -64,7 +64,13 @@ Once the response is recived, the user can see the json with all the information
 Other GPCRmd API
 ================
 
-This other part of the api is related with the files stored into GPCRmd. For security, to have a control of who's is downloading the data from the web it is necessary to be log in with a GPCRmd account (see `GPCRmd account guide <https://gpcrmd-docs.readthedocs.io/en/latest/accounts.html>`_). 
+This other part of the api is related with the files stored into GPCRmd. 
+
+API Downloader
+--------------
+
+For security, to have a control of who's is downloading the data 
+  from the web it is necessary to be log in with a GPCRmd account (see `GPCRmd account guide <https://gpcrmd-docs.readthedocs.io/en/latest/accounts.html>`_). 
 
 .. image:: _static/gpcrmd_othapi.png
   :width: 600
@@ -73,25 +79,47 @@ This other part of the api is related with the files stored into GPCRmd. For sec
 One of the functions is the downloader. The main function of this tool is to download all the files related to a dynamic, from topology to protocol files. 
 
 .. warning::
-  Now, is under development for this reason is restricted to 5 dynamics ids for each request. 
+  To protect server performance, downloads are limited to 5 dynamics ids per request, and to a weekly quota per user. Your current quota usage is shown above the request form. 
 
 .. image:: _static/gpcrmd_othdown.png
   :width: 600
   :alt: GPCRmd other API downloader
 
-This process take some minutes because there are large files to collect, compressed and retrieve to the user. Let it run on the background.
+Weekly quota
+~~~~~~~~~~~~
 
-Once, the compressed file is created the user can see a button named "Download" to start the download of the file: 
+Each user account has a limit of **10 dynamics that can be downloaded per week** through this tool. The counter resets every Monday. You can see how much of your quota you've 
+  used at the top of the downloader, next to the request form.
+
+If you reach your weekly limit, new download requests will be rejected until the quota resets. Dynamics from a failed or incomplete download do not count against your quota — 
+  only successfully completed downloads are counted.
+
+If you need a higher limit for a specific research need, please contact us at `info@gpcrmd.org`.
+
+This process take some minutes because there are large files to collect, compressed and retrieve to the user. Let it run on the background. If you reload the page while 
+  a download is running, the tool will automatically reconnect to your ongoing request and resume showing its progress — you don't need to start it again.
+
+Retrieving your download
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Once the compressed file is created the user can see a button named "Download" to start the download of the file: 
 
 .. image:: _static/gpcrmd_othdownlink.png
   :width: 600
   :alt: GPCRmd other API downloader link
 
-Each dynamic have is own directory, using the id. Into each directory the user can find all the files related with each dynamic. 
+Each dynamic has its own directory, named after its id. Inside each directory you can find all the files related to that dynamic.
 
 .. image:: _static/gpcrmd_othdownzip.png
   :width: 600
   :alt: GPCRmd other API downloader zip
+
+Alongside the download link, a Log file button becomes available, listing every file included in your download and any dynamics that could not be added (for example, 
+  if not yet published). It opens in a new tab so you can keep the download page open.
+
+.. image:: _static/gpcrmd_othdownlog.png
+  :width: 600
+  :alt: GPCRmd other API downloader log
 
 In case that you found any problem, do not doubt on contact us to `info@gpcrmd.org`. 
 

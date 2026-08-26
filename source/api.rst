@@ -5,8 +5,7 @@ Web services
 .. contents:: 
     :depth: 2
 
-The GPCRmd API is oriented to facilitate to users to acces to the information of GPCRmd database more efficienty and fastest using coding and 
-  urls. Behind this tool we used the framework django-rest with the updated Swagger version under the name of `drf_yasg`. 
+The GPCRmd API is oriented to facilitate to users to acces to the information of GPCRmd database more efficienty and fastest using coding and urls. Behind this tool we used the framework django-rest with the updated Swagger version under the name of `drf_yasg`. 
 
 .. image:: _static/gpcrmd_api.png
   :width: 600
@@ -70,8 +69,7 @@ This other part of the api is related with the files stored into GPCRmd.
 API Downloader
 --------------
 
-For security, to have a control of who's is downloading the data 
-  from the web it is necessary to be log in with a GPCRmd account (see `GPCRmd account guide <https://gpcrmd-docs.readthedocs.io/en/latest/accounts.html>`_). 
+For security, to have a control of who's is downloading the data from the web it is necessary to be log in with a GPCRmd account (see `GPCRmd account guide <https://gpcrmd-docs.readthedocs.io/en/latest/accounts.html>`_). 
 
 .. image:: _static/gpcrmd_othapi.png
   :width: 600
@@ -89,16 +87,13 @@ One of the functions is the downloader. The main function of this tool is to dow
 Weekly quota
 ~~~~~~~~~~~~
 
-Each user account has a limit of **10 dynamics that can be downloaded per week** through this tool. The counter resets every Monday. You can see how much of your quota you've 
-  used at the top of the downloader, next to the request form.
+Each user account has a limit of **10 dynamics that can be downloaded per week** through this tool. The counter resets every Monday. You can see how much of your quota you've used at the top of the downloader, next to the request form.
 
-If you reach your weekly limit, new download requests will be rejected until the quota resets. Dynamics from a failed or incomplete download do not count against your quota — 
-  only successfully completed downloads are counted.
+If you reach your weekly limit, new download requests will be rejected until the quota resets. Dynamics from a failed or incomplete download do not count against your quota — only successfully completed downloads are counted.
 
 If you need a higher limit for a specific research need, please contact us at `info@gpcrmd.org`.
 
-This process take some minutes because there are large files to collect, compressed and retrieve to the user. Let it run on the background. If you reload the page while 
-  a download is running, the tool will automatically reconnect to your ongoing request and resume showing its progress — you don't need to start it again.
+This process take some minutes because there are large files to collect, compressed and retrieve to the user. Let it run on the background. If you reload the page while a download is running, the tool will automatically reconnect to your ongoing request and resume showing its progress — you don't need to start it again.
 
 Retrieving your download
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,8 +110,7 @@ Each dynamic has its own directory, named after its id. Inside each directory yo
   :width: 600
   :alt: GPCRmd other API downloader zip
 
-Alongside the download link, a Log file button becomes available, listing every file included in your download and any dynamics that could not be added (for example, 
-  if not yet published). It opens in a new tab so you can keep the download page open.
+Alongside the download link, a Log file button becomes available, listing every file included in your download and any dynamics that could not be added (for example, if not yet published). It opens in a new tab so you can keep the download page open.
 
 .. image:: _static/gpcrmd_othdownlog.png
   :width: 600

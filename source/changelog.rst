@@ -10,13 +10,17 @@ Changelog
 
 **IMPORTANT**
 
-* Introduced a weekly quota limiting the number of dynamics a user can download, 
-  to prevent server overload from repeated large-scale download requests.
+* API Downloader update: introduced a weekly quota limiting the number of dynamics 
+  a user can download, to prevent server overload from repeated large-scale 
+  download requests.
 
 **Added**
 
 * Displayed the current weekly download quota usage in the large-scale download tool.
 * Added automatic recovery of an in-progress download after a page reload.
+* Added missing publications for studies that users had submitted but never 
+  completed closing for review.
+* Reconciled the corresponding article and DOI metadata with the platform users.
 
 **Changed**
 
@@ -33,6 +37,7 @@ Changelog
 * Fixed a error that could interrupt the progress-polling cycle.
 * Removed an unnecessary delay in the download-status check that could slow down 
   the server with multiple simultaneous users.
+* Fixed home section icons not displaying/linking correctly.
 
 2.2 (09-06-2026)  
 *******************************

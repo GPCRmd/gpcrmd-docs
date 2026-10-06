@@ -101,10 +101,9 @@ At the home page, at the top on the Account menu, the user have some options to 
   :width: 600
   :alt: GPCRmd log in
 
-Here, is the request form to access into a non-published submission (e.g. for reviewers). The user must to complete the next parameters:
-
-* **Dynamic id:** The identifier of the dynamic. 
-* **Submission password:** The Secret submission key. 
+Here is the request form to access a non-published submission (e.g. for reviewers). The user only needs to fill in:
+ 
+* **Submission password:** The secret submission key, set by the owner of the submission.
 
 .. image:: _static/gpcrmd_accsecretreq.png
   :width: 600
